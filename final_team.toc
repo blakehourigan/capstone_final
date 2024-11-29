@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {2.2}Initial System Specification}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Final Specifications}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}System Diagrams}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{5}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{5}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{6}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{6}{subsection.2.7}%
 \contentsline {section}{\numberline {3}Detailed Implementation}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{6}{subsection.3.1}%
