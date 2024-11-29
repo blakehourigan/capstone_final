@@ -69,13 +69,35 @@ solution to these issues.
 
 The SoFab team described the current state of inventory management at the company which included problems such as shipments arriving 
 to incorrect customers, an inability to pinpoint important information about products as they progressed through the manufacturing 
-process, and difficult to track remaining volumes of chemical products.
+process, and difficult to track remaining volumes of chemical products. In these discussions, SoFab also emphasized the importance 
+of a solution begin \textit{simple and easy-to-use}. As the team is primarily constructed of chemical engineers or business people, 
+technology was not a strength. The company also made it clear that the ability to generate item labels for internal tracking of 
+should be a priority. These labels would allow members of their team to easily scan a barcode to view the details of an item. Finally, 
+it was also made clear that the company also desired the ability to generate shipment labels for their products as well. These labels 
+would differ slightly from their internal tracking label counterparts with the inclusion of chemical hazard information. This information
+would be included as a way to reduce harm for customers handling SoFab's chemicals upon receipt.
 
+After this initial discussion, Team 3 began to brainstorm potential solutions to the problems presented. Immediately, 3 main 
+pieces of software jumped out at the team as critical pieces to what would be the final product.
 
 \begin{enumerate}
-    \item A Database System
-    \item A User-Friendly Database Interface
-    \item Software to Generate Internal and Shipment Labels
+    \item \textbf{A Database System} - In order to move the company away from the usage of Google Sheets and toward a more efficient, 
+        safe and redundant, user-friendly solution, Team 3 knew it would be necessary to select an existing database software solution.
+        While the team was unsure of what specific solution would be chosen, it was sure that one of these solutions would be required.
+    \item \textbf{A User-Friendly Database Interface} - While a database solution would be an incredible improvement on its own, it 
+        would be useless to the SoFab team if there were not a simple and easy way to interact with the underlying data. Again, the team
+        was unsure of what specific solution would be chosen, but a few requirements from discussions with SoFab were clear. 
+        \begin{itemize}
+            \item \textbf{Clean, Simple, Easy-to-Use} - As previously discussed, SoFab was clear that a simple and easy-to-use solution
+                was of paramount importance for the day-to-day usage of the product. 
+            \item \textbf{Free and Open-Source} - While this requirement was not mentioned in the initial discussions with SoFab, this 
+                requirement jumped out as important to Team 3 because this would help to avoid incurring additional costs beyond the 
+                development cost that SoFab had already paid. 
+        \end{itemize}
+    \item \textbf{Software to Generate Internal and Shipment Labels} - After discussing the need for barcode and label generation software,
+        the team found that it would likely be necessary to build custom software to meet the needs of the client. The requirements were 
+        quite specific, and would not be available in any existing commercial product. These requirements certainly would not be made 
+        available in any \textit{free and open-source} software.
 \end{enumerate}
 \subsection{Initial System Specification}
 (External design document) 
