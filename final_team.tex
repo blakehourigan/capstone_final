@@ -139,6 +139,35 @@ significantly and enable faster production.
 
 For the reasons stated above, PostgreSQL was selected as the database software of choice for this project. 
 \subsubsection{Selecting an Interface}
+While PostgreSQL would be a great choice to build a database for SoFab inks, this software alone - as stated previously - would be 
+useless to the SoFab team by itself. Team 3 needed to produce a user interface that was simple, user-friendly, and would be capable 
+of fulfilling all of SoFab's functional requirements. Team 3 scoured the internet, searching for a solution that would fulfil these 
+requirements. Eventually, the open-source software Budibase was found. Upon investigation into Budibase, it was discovered that this 
+software could be self-hosted, and if self-hosted, was \textit{free-to-use}. This immediately fulfilled two requirements, so the team
+installed the software locally and began to interact with it to determine if it could fill the user-friendliness and functional 
+requirements discussed previously. 
+
+It was found that Budibase functions in a manner similar to that of website builders like ``Wix'' or ``Squarespace''. An architect
+has the ability to connect to an existing database, 
+then can select from existing templates based on the type of project at hand, and even use templates for types of pages to use. The 
+architect can select between form-type templates where the user can edit or insert information about a row in a database table, or table-type 
+templates where the user can view large amounts of data at a glance. 
+
+Additionally, one can drag and drop pre-made components from the sidebar, and arrange them as they see fit. These components can 
+connect to any data source in the database. Data sources include standard database tables and even custom queries to provide maximum 
+customizability. 
+
+While using a builder software like Budibase reduces the complexity in creating CRUD apps, they can pose a challenge in that all 
+documentation and 
+instructions for using the software provided strictly by Budibase themselves. The self-hosted Budibase community is not 
+very large, so if an issue arises, an architect may be left to themselves to resolve it if that issue is not covered
+in the existing documentation. 
+
+Thankfully, however, the Budibase team has prioritized documentation, with instructions on how to use their many available 
+components in various ways. They have created a page dedicated to the use of their platform, self-hosting instructions and guidance, 
+component use, connecting the service to the database software in use, and much more. \cite{budibase-docs} The team also provides 
+many instructional videos and how-tos on their website and on their company YouTube page. \cite{budibase-youtube}
+
 \subsubsection{A Language for Custom Software}
 
 (External design document) 
@@ -310,7 +339,19 @@ factors)
     About SofaBinks. Retrieved November 29, 2024, from \url{https://www.sofabinks.com/about}
 \bibitem{postgresql-mvcc} PostgreSQL Global Development Group, \textit{MVCC: Multi-Version Concurrency Control}, 
     PostgreSQL 7.1 Documentation, \url{https://www.postgresql.org/docs/7.1/mvcc.html}, Accessed on: November 27, 2024.
+\bibitem{budibase-docs} 
+Budibase Team, 
+\textit{What is Budibase?}, Budibase Documentation, 
+\url{https://docs.budibase.com/docs/what-is-budibase}, 
+accessed on: November 28, 2024.
+
+\bibitem{budibase-youtube} 
+Budibase, 
+\textit{Budibase YouTube Channel}, YouTube, 
+\url{https://www.youtube.com/@Budibase}, 
+accessed on: November 28, 2024.
 \end{thebibliography}
+
 
 \addcontentsline{toc}{section}{References}
 
