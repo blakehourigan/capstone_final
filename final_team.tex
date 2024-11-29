@@ -71,7 +71,9 @@ The SoFab team described the current state of inventory management at the compan
 to incorrect customers, an inability to pinpoint important information about products as they progressed through the manufacturing 
 process, and difficult to track remaining volumes of chemical products. In these discussions, SoFab also emphasized the importance 
 of a solution begin \textit{simple and easy-to-use}. As the team is primarily constructed of chemical engineers or business people, 
-technology was not a strength. The company also made it clear that the ability to generate item labels for internal tracking of 
+technology was not a strength. 
+
+The company also made it clear that the ability to generate item labels for internal tracking of 
 should be a priority. These labels would allow members of their team to easily scan a barcode to view the details of an item. Finally, 
 it was also made clear that the company also desired the ability to generate shipment labels for their products as well. These labels 
 would differ slightly from their internal tracking label counterparts with the inclusion of chemical hazard information. This information
@@ -100,6 +102,45 @@ pieces of software jumped out at the team as critical pieces to what would be th
         available in any \textit{free and open-source} software.
 \end{enumerate}
 \subsection{Initial System Specification}
+Following the identification of the 3 main categories of software that would comprise the solution to SoFab's inventory management 
+problems, Team 3 dove into research of each individual component to identify optimal selections. 
+\subsubsection{Selecting a Database}
+Firstly, it was important for Team 3 to become familiar with existing solutions that were \textbf{free and open-source}. 
+This required conducting research on computer-science related websites and forums, and more general forums like 
+Reddit. While a site like Reddit may not always be the most reliable source of information, it could provide a general sense of what 
+people feel about particular software and how easy it is work with. 
+
+Many databases fulfilling the free and open-source requirement were identified, including: PostgreSQL, MySQL, MariaDB, and SQLite. As 
+many options were available to select from, it was important to look beyond this requirement and investigate techinical specificaitions
+of these solutions. During this time it was discovered that \textbf{PostgreSQL} had several technical benefits over more popular 
+rivals. PostgreSQL boasts of being a fully \textbf{ACID} compliant database system. With features such as \textit{Write-Ahead Logging},
+which writes transactions to a log file to avoid pushing a full table(s) every time a transaction is committed, \textit{Multi-version 
+Concurrency Control} which the PostgreSQL documentation describes as 
+
+\begin{quote}``This means that while querying a database each transaction 
+sees a snapshot of data (a database version) as it was some time ago, regardless of the current state of the underlying data. 
+This protects the transaction from viewing inconsistent data that could be caused by (other) concurrent transaction updates on the 
+same data rows, providing transaction isolation for each database session.''\cite{postgresql-mvcc}
+\end{quote} 
+
+Furthermore, PostgreSQL utilizes its \textit{Write-Ahead Log} to implement \textit{Point-in-Time Recovery} without the need of 
+complete backup. Additionally, since the Write-Ahead Log contains all transactions since the previous system backup, one can 
+return to the exact state of \textbf{any} \textit{point in time} between the most recent backup version and the current version. 
+Team 3 felt that these benefits would be incredibly beneficial for SoFab's new database, which would be the central hub containing 
+the whereabouts and remaining inventory of their lab. This database would also contain important product information which if lost 
+or damaged could have severe consequences for their business. 
+
+Beyond technical considerations, ease of use was of great consideration when selecting a database, and luckily, PostgreSQL 
+benefits from being very easy-to-use. PostgreSQL has an additional software called \textbf{PgAdmin4}, a project led by a core developer of 
+PostgreSQL! This software integrates very well with PSQL\footnote{PSQL is short for PostgreSQL.}
+This software provides a GUI that allows developers to interact with the database, run queries, add and edit tables, view ERDs
+\footnote{ERD stands for entity relationship diagrams.} for tables, and much more. This would simplify team members development tasks
+significantly and enable faster production. 
+
+For the reasons stated above, PostgreSQL was selected as the database software of choice for this project. 
+\subsubsection{Selecting an Interface}
+\subsubsection{A Language for Custom Software}
+
 (External design document) 
     EAC 1. Identify, formulate, and solve complex engineering problems by 
     applying principles of engineering, science, and mathematics and CAC 1. 
@@ -267,6 +308,8 @@ factors)
 \begin{thebibliography}{99}
 \bibitem{sofabinks} SofaBinks. (n.d.). 
     About SofaBinks. Retrieved November 29, 2024, from \url{https://www.sofabinks.com/about}
+\bibitem{postgresql-mvcc} PostgreSQL Global Development Group, \textit{MVCC: Multi-Version Concurrency Control}, 
+    PostgreSQL 7.1 Documentation, \url{https://www.postgresql.org/docs/7.1/mvcc.html}, Accessed on: November 27, 2024.
 \end{thebibliography}
 
 \addcontentsline{toc}{section}{References}

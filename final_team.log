@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  29 NOV 2024 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  29 NOV 2024 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,56 +341,74 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [3] [4
 
-] [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6]
-<pictures/pg_admin.png, id=229, 1082.0425pt x 1233.60875pt>
+] [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7]
+<pictures/pg_admin.png, id=255, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
-Package pdftex.def Info: pictures/pg_admin.png  used on input line 148.
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 189.
 (pdftex.def)             Requested size: 142.26378pt x 162.18181pt.
-<pictures/pg_admin2.png, id=230, 739.76375pt x 1012.78375pt>
+<pictures/pg_admin2.png, id=256, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
-Package pdftex.def Info: pictures/pg_admin2.png  used on input line 154.
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 195.
 (pdftex.def)             Requested size: 142.26378pt x 194.76443pt.
-<pictures/budibase.png, id=231, 2569.6pt x 1168.365pt>
-File: pictures/budibase.png Graphic file (type png)
-<use pictures/budibase.png>
-Package pdftex.def Info: pictures/budibase.png  used on input line 164.
-(pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
- [7 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
-<pictures/budibase2.png, id=239, 2251.41125pt x 1169.36874pt>
-File: pictures/budibase2.png Graphic file (type png)
-<use pictures/budibase2.png>
-Package pdftex.def Info: pictures/budibase2.png  used on input line 170.
-(pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
-<pictures/budibase3.png, id=240, 2312.64pt x 1179.40625pt>
-File: pictures/budibase3.png Graphic file (type png)
-<use pictures/budibase3.png>
-Package pdftex.def Info: pictures/budibase3.png  used on input line 176.
-(pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./pictures/budibase.png (PNG copy)> <./pictures/budibase2.png (PNG copy)>]
+<pictures/budibase.png, id=257, 2569.6pt x 1168.365pt>
+File: pictures/budibase.png Graphic file (type png)
+<use pictures/budibase.png>
+Package pdftex.def Info: pictures/budibase.png  used on input line 205.
+(pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/budibase2.png, id=258, 2251.41125pt x 1169.36874pt>
+File: pictures/budibase2.png Graphic file (type png)
+<use pictures/budibase2.png>
+Package pdftex.def Info: pictures/budibase2.png  used on input line 211.
+(pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/budibase3.png, id=259, 2312.64pt x 1179.40625pt>
+File: pictures/budibase3.png Graphic file (type png)
+<use pictures/budibase3.png>
+Package pdftex.def Info: pictures/budibase3.png  used on input line 217.
+(pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8] [9 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy
+)> <./pictures/budibase.png (PNG copy)>] [10 <./pictures/budibase2.png (PNG cop
+y)> <./pictures/budibase3.png (PNG copy)>]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [9 <./pictures/budibase3.png (PNG copy)>] [10] [11] [12] (./final_team.aux)
+) [11
+
+] [12]
+Underfull \hbox (badness 6675) in paragraph at lines 311--313
+\OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
+ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
+ []
+
+[13] [14] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: 2A69BB918341F4B10C818E59DDED907A;6936.
+(rerunfilecheck)             Checksum: 6BD8646498F45423587CFE10963F3B83;7524.
  ) 
 Here is how much of TeX's memory you used:
- 12312 strings out of 476076
- 191263 string characters out of 5793775
- 2059187 words of memory out of 5000000
- 34199 multiletter control sequences out of 15000+600000
+ 12326 strings out of 476076
+ 191510 string characters out of 5793775
+ 2163187 words of memory out of 5000000
+ 34205 multiletter control sequences out of 15000+600000
  563639 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,417b,1336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,417b,2032s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -403,10 +421,10 @@ r9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1000.pfb>
-Output written on final_team.pdf (12 pages, 698363 bytes).
+Output written on final_team.pdf (14 pages, 710401 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 108 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,33 +4,36 @@
 \contentsline {section}{\numberline {2}System Description}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Needs Assessment\slash System Requirements}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Initial System Specification}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Final Specifications}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}System Diagrams}{6}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{6}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{7}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{7}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Detailed Implementation}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Docker-Compose}{7}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}PostgreSQL}{7}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}PgAdmin4}{7}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.1}Selecting a Database}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Selecting an Interface}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}A Language for Custom Software}{7}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Final Specifications}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}System Diagrams}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{8}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Detailed Implementation}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Docker-Compose}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}PostgreSQL}{8}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}PgAdmin4}{8}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}Budibase}{8}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Python Database Insertion\slash Label Generation}{9}{subsubsection.3.2.5}%
-\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{10}{section.4}%
-\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{11}{section.5}%
-\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{11}{section.6}%
-\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{11}{section.7}%
-\contentsline {section}{\numberline {8}Conclusions}{11}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{11}{section.9}%
-\contentsline {section}{References}{11}{section*.6}%
-\contentsline {section}{Appendices}{12}{section*.7}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{12}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{12}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{12}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{12}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{12}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{12}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{12}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{12}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{12}{appendix.I}%
+\contentsline {subsubsection}{\numberline {3.2.5}Python Database Insertion\slash Label Generation}{11}{subsubsection.3.2.5}%
+\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{12}{section.4}%
+\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{12}{section.5}%
+\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{12}{section.6}%
+\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{13}{section.7}%
+\contentsline {section}{\numberline {8}Conclusions}{13}{section.8}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{13}{section.9}%
+\contentsline {section}{References}{13}{section*.6}%
+\contentsline {section}{Appendices}{14}{section*.7}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{14}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sheets}{14}{appendix.B}%
+\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{14}{appendix.C}%
+\contentsline {section}{\numberline {D}Source Code}{14}{appendix.D}%
+\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{14}{appendix.E}%
+\contentsline {section}{\numberline {F}Software Installation Instructions}{14}{appendix.F}%
+\contentsline {section}{\numberline {G}User Manual}{14}{appendix.G}%
+\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{14}{appendix.H}%
+\contentsline {section}{\numberline {I}White Papers}{14}{appendix.I}%
