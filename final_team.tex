@@ -7,7 +7,25 @@
 \usepackage{subcaption}
 \usepackage{placeins}
 
-\graphicspath{{"/home/blake/Pictures/capstone team final"}}
+\graphicspath{{"pictures"}}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{orange},
+}
+\lstdefinelanguage{yaml}{
+    morekeywords={true,false,null,y,n},      % Add keywords here
+    sensitive=false,                        % Case insensitive
+    morecomment=[l]{\#},                    % Line comments start with #
+    morestring=[b]",                        % Double-quoted strings
+    morestring=[b]',                        % Single-quoted strings
+}
 
 \setlength{\parskip}{1em}
 
@@ -30,11 +48,11 @@ Research with support from the US DoE. SoFab inks focuses on accelerating the co
 through the development and manufacturing of functionalized inks that improve cell efficiency, reduce module cost, and enable scalable 
 manufacturing. \cite{sofabinks}
 \subsection{SoFab Inks Inventory Management Problem}
-SoFab Inks is doing important work in the field of solar cell technology, helping to drive humanity towards a cleaner, more abundant
-energy future. The problem, however, is that the team currently faces issues with managing inventory. These challenges prevent SoFab's
-talented team from working on the most important aspects of their work. These tasks include expending valuable energy on menial 
+SoFab Inks is doing important work in the field of solar cell technology, helping to drive humanity towards a cleaner, more energy 
+abundant future. The problem, however, is that the team currently faces issues with managing inventory. These challenges prevent SoFab's
+talented team from working on the most important aspects of their work. These challenges include expending valuable energy on menial 
 tasks like locating inventory, managing a growing number of shipments manually, scouring inventory entries found across several 
-Google Sheets or hand written labels to pinpoint important product information, and more. 
+Google Sheets or handwritten labels to pinpoint important product information, and more. 
 
 
 
@@ -87,6 +105,102 @@ CAC 2. Design, implement, and evaluate a
 \subsection{Hardware Detailed Implementation}
 
 \subsection{Software Detailed Implementation}
+\subsubsection{Docker-Compose}
+\subsubsection{PostgreSQL}
+\subsubsection{PgAdmin4}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{.45\textwidth}
+        \centering
+        \includegraphics[width=5cm]{"pg_admin.png"}
+        \caption{Viewing existing tables in PgAdmin interface.}
+        \label{fig:pg_admin_tables}
+    \end{subfigure}
+    \begin{subfigure}[b]{.45\textwidth}
+        \centering
+        \includegraphics[width=5cm]{"pg_admin2.png"}
+        \caption{Running PostgreSQL queries inside of PgAdmin4.}
+        \label{fig:pg_admin_queries}
+    \end{subfigure}
+    \caption{}
+    \label{fig:pg_admin_figs}
+\end{figure}
+\subsubsection{Budibase}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{"budibase.png"}
+    \caption{Budibase home page. Global search that searches all types of inventory via QR code or direct ID entry.}
+    \label{fig:budibase_home}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{"budibase2.png"}
+    \caption{Budibase general inventory page. Keep track of general lab items.}
+    \label{fig:budibase_gen_inv}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{"budibase3.png"}
+    \caption{Keep track of customer information with Budibase. View customer information or view all orders originating from a
+    customer}
+    \label{fig:budibase_customers}
+\end{figure}
+
+\FloatBarrier
+\subsubsection{Python Database Insertion\slash Label Generation}
+\begin{lstlisting}[language=Python]
+class App(Tk):
+    def __init__(self, controller):
+        # initializing the Tk class instance
+        super().__init__()
+
+        self.title("SoFab Inventory Managment System")
+
+        self.style = Style(theme="darkly")
+
+        self.controller = controller
+        self.controller.set_view(self)
+
+        self.notebook = ttk.Notebook()
+        self.notebook.pack(fill="both", expand=True)
+        self.notebook.bind("<<NotebookTabChanged>>", self.on_tab_selection)
+
+        # filling the notebook (top tabs) with frames
+
+        item_type_tables = self.controller.get_item_type_tables()
+\end{lstlisting}
+\begin{lstlisting}[language=Python]
+class HazardPrecautionFrame(tk.Frame):
+    def __init__(self, parent, controller, warning_dict, images=False):
+        super().__init__(parent)
+\end{lstlisting}
+\begin{lstlisting}[language=Python]
+def generate_checkboxes(self, images=False):
+    self.checkboxes_frame = tk.Frame(self)
+    self.checkboxes_frame.grid(row=0, column=0)
+
+    for item in self.warning_items:
+        if images:
+            image = Image.open(item[1])
+            resized_image = image.resize((100, 100), Image.LANCZOS)
+            image = ImageTk.PhotoImage(resized_image)
+            item = item[0]
+        else:
+            image = None
+        var = tk.BooleanVar()
+        checkbox = ttk.Checkbutton(
+            self.checkboxes_frame,
+            text=item,
+            image=image,
+            compound="left",
+            variable=var,
+            command=lambda var=var: self.parent.update_text_box(),
+        )
+        checkbox.image = image
+
+        checkbox.pack(anchor="w", fill="x")
+\end{lstlisting}
+
 EAC 1. Identify, formulate, and solve complex engineering problems by 
 applying principles of engineering, science, and mathematics and EAC 2. 
 Apply engineering design to produce solutions that meet specified needs with 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  29 NOV 2024 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  29 NOV 2024 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -271,25 +271,25 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 (./final_team.aux)
 \openout1 = `final_team.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-Package hyperref Info: Link coloring OFF on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+Package hyperref Info: Link coloring OFF on input line 36.
  (./final_team.out) (./final_team.out)
 \@outlinefile=\write3
 \openout3 = `final_team.out'.
@@ -321,11 +321,11 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 38.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./final_team.toc
@@ -341,32 +341,79 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [3] [4
 
-] [5]
-[6] [7] [8] (./final_team.aux)
+]
+<pictures/pg_admin.png, id=211, 1082.0425pt x 1233.60875pt>
+File: pictures/pg_admin.png Graphic file (type png)
+<use pictures/pg_admin.png>
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 115.
+(pdftex.def)             Requested size: 142.26378pt x 162.18181pt.
+<pictures/pg_admin2.png, id=212, 739.76375pt x 1012.78375pt>
+File: pictures/pg_admin2.png Graphic file (type png)
+<use pictures/pg_admin2.png>
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 121.
+(pdftex.def)             Requested size: 142.26378pt x 194.76443pt.
+ [5]
+<pictures/budibase.png, id=217, 2569.6pt x 1168.365pt>
+File: pictures/budibase.png Graphic file (type png)
+<use pictures/budibase.png>
+Package pdftex.def Info: pictures/budibase.png  used on input line 131.
+(pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/budibase2.png, id=218, 2251.41125pt x 1169.36874pt>
+File: pictures/budibase2.png Graphic file (type png)
+<use pictures/budibase2.png>
+Package pdftex.def Info: pictures/budibase2.png  used on input line 137.
+(pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/budibase3.png, id=219, 2312.64pt x 1179.40625pt>
+File: pictures/budibase3.png Graphic file (type png)
+<use pictures/budibase3.png>
+Package pdftex.def Info: pictures/budibase3.png  used on input line 143.
+(pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
+[7 <./pictures/budibase.png (PNG copy)> <./pictures/budibase2.png (PNG copy)>]
+[8 <./pictures/budibase3.png (PNG copy)>]
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) [9
+
+] [10] [11] [12]
+(./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: 4C12F3F812257EA9B639A2C936956F68;6177.
+(rerunfilecheck)             Checksum: 2A69BB918341F4B10C818E59DDED907A;6936.
  ) 
 Here is how much of TeX's memory you used:
- 11665 strings out of 476076
- 183251 string characters out of 5793775
- 1933187 words of memory out of 5000000
- 33626 multiletter control sequences out of 15000+600000
- 562492 words of font info for 51 fonts, out of 8000000 for 9000
+ 12298 strings out of 476076
+ 191041 string characters out of 5793775
+ 2163187 words of memory out of 5000000
+ 34192 multiletter control sequences out of 15000+600000
+ 562958 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,6n,79p,417b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,417b,2032s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_team.pdf (8 pages, 113728 bytes).
+r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt9.pfb>
+Output written on final_team.pdf (12 pages, 648606 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
