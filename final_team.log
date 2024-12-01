@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  30 NOV 2024 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  1 DEC 2024 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,52 +263,92 @@ Package caption Info: New subtype `subtable' on input line 238.
 (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count286
+\calc@Bcount=\count287
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count288
+\calc@Cskip=\skip53
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen161
+\ESO@tempdimb=\dimen162
+)
+\AM@pagewidth=\dimen163
+\AM@pageheight=\dimen164
+\AM@fboxrule=\dimen165
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count289
+\AM@pagebox=\box53
+\AM@global@opts=\toks19
+\AM@pagecnt=\count290
+\AM@toc@title=\toks20
+\AM@lof@heading=\toks21
+\c@AM@survey=\count291
+\AM@templatesizebox=\box54
+)
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box55
 )
 (./final_team.aux)
 \openout1 = `final_team.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-Package hyperref Info: Link coloring OFF on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package hyperref Info: Link coloring OFF on input line 37.
  (./final_team.out) (./final_team.out)
 \@outlinefile=\write3
 \openout3 = `final_team.out'.
 
-\c@lstlisting=\count287
+\c@lstlisting=\count293
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen159
-\scratchbox=\box54
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen160
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count294
+\scratchdimen=\dimen166
+\scratchbox=\box56
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen167
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -320,12 +360,25 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 38.
+(Font)              <12> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 38.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 38.
+(Font)              <6> on input line 39.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./final_team.toc
@@ -335,87 +388,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
  [2
 
-])
+] [3])
 \tf@toc=\write4
 \openout4 = `final_team.toc'.
 
- [3] [4
+ [4] [5
 
-] [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7] 
-[8]
-Overfull \hbox (2.04132pt too wide) in paragraph at lines 188--193
+] [6{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [7] [8] 
+[9]
+Overfull \hbox (2.04132pt too wide) in paragraph at lines 190--195
 []\OT1/cmr/bx/n/10 Reliability/Durability \OT1/cmr/m/n/10 - The two re-quire-me
 nts pre-vi-ously dis-cussed were
  []
 
-[9] [10]
-<pictures/pg_admin.png, id=277, 1082.0425pt x 1233.60875pt>
+[10] [11] [12] [13] [14] [15] [16] [17]
+<pictures/pg_admin.png, id=352, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
-Package pdftex.def Info: pictures/pg_admin.png  used on input line 279.
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 431.
 (pdftex.def)             Requested size: 142.26378pt x 162.18181pt.
-<pictures/pg_admin2.png, id=278, 739.76375pt x 1012.78375pt>
+<pictures/pg_admin2.png, id=353, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
-Package pdftex.def Info: pictures/pg_admin2.png  used on input line 285.
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 437.
 (pdftex.def)             Requested size: 142.26378pt x 194.76443pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pictures/budibase.png, id=279, 2569.6pt x 1168.365pt>
+<pictures/budibase.png, id=354, 2569.6pt x 1168.365pt>
 File: pictures/budibase.png Graphic file (type png)
 <use pictures/budibase.png>
-Package pdftex.def Info: pictures/budibase.png  used on input line 295.
+Package pdftex.def Info: pictures/budibase.png  used on input line 447.
 (pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase2.png, id=280, 2251.41125pt x 1169.36874pt>
+<pictures/budibase2.png, id=355, 2251.41125pt x 1169.36874pt>
 File: pictures/budibase2.png Graphic file (type png)
 <use pictures/budibase2.png>
-Package pdftex.def Info: pictures/budibase2.png  used on input line 301.
+Package pdftex.def Info: pictures/budibase2.png  used on input line 453.
 (pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase3.png, id=281, 2312.64pt x 1179.40625pt>
+<pictures/budibase3.png, id=356, 2312.64pt x 1179.40625pt>
 File: pictures/budibase3.png Graphic file (type png)
 <use pictures/budibase3.png>
-Package pdftex.def Info: pictures/budibase3.png  used on input line 307.
+Package pdftex.def Info: pictures/budibase3.png  used on input line 459.
 (pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG co
-py)> <./pictures/budibase.png (PNG copy)>] [13 <./pictures/budibase2.png (PNG c
-opy)> <./pictures/budibase3.png (PNG copy)>]
+[18 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
+[19 <./pictures/budibase.png (PNG copy)> <./pictures/budibase2.png (PNG copy)>]
+[20 <./pictures/budibase3.png (PNG copy)>]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [14
+) [21
 
-] [15]
-Underfull \hbox (badness 6675) in paragraph at lines 401--403
+] [22]
+Underfull \hbox (badness 6675) in paragraph at lines 553--555
 \OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
 ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
  []
 
-[16] [17] (./final_team.aux)
+[23] [24] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: 6BD8646498F45423587CFE10963F3B83;7524.
+(rerunfilecheck)             Checksum: DD42CD7A3E4C7A17BEC91FDFA4523ADA;8626.
  ) 
 Here is how much of TeX's memory you used:
- 12339 strings out of 476076
- 191642 string characters out of 5793775
+ 13239 strings out of 476076
+ 206975 string characters out of 5793775
  2163187 words of memory out of 5000000
- 34208 multiletter control sequences out of 15000+600000
- 563639 words of font info for 55 fonts, out of 8000000 for 9000
+ 35057 multiletter control sequences out of 15000+600000
+ 563991 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,417b,2032s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,417b,2036s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -425,13 +475,14 @@ are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1000.pfb>
-Output written on final_team.pdf (17 pages, 722857 bytes).
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfrm1000.pfb>
+Output written on final_team.pdf (24 pages, 751980 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,7 +6,6 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{placeins}
-\usepackage{pdfpages}
 
 \graphicspath{{"pictures"}}
 
@@ -295,134 +294,18 @@ main ways in which economic constraints were addressed follow below.
 \subsubsection{Technical Constraints}
 The next primary factor which constrained Team 3 during the development of the solution their technical ability and technological 
 constraints. The limitations in technical ability discussed here coincide with time constrains, however technical ability specifically 
-will be discussed in this section. As discussed in Section \ref{sec:init-sys-specs}, Team 3 was limited technically in that all team 
-members had the most familiarity with one programming language - \textit{Python}. This imposed several technical limitations including 
-reliability and efficiency that were traded for familiarity, ease-of-use, and lirary availability. The Rust programming language's 
-memory safety features, combined with its status as a compiled language held much in the way of potential benefits for the development 
-of this project. However, due to Team 3's unfamiliarity with the language, these potential benefits became limitations by use of Python, 
-which faces challenges both with reliability and efficiency. 
-
-Additionally, Team 3 was consrained technologically by installation hardware. Upon completion, this project's software stack would 
-be installed onto SoFab's main laboratory computer. This software stack would act as a server on the local area network to field requests
-from mobile devices for ease-of-use and convenience. It was for this reason that Team 3 was obligated to be mindful of resource usage 
-regarding installed software, and aware of the computational cost of adding further software. The installation site would be used for 
-other tasks besides this inventory management system, and therefore the system needed to function efficiently to avoid slowing down 
-other operations and tasks conducted on the lab computer. 
-
-Specific action taken to avoid concerns regarding these constraints is discussed in Section \ref{sec:det-imp}, however a general outline
-is provided here. 
-\begin{enumerate}
-    \item Mindfulness Regarding Existing Lab Hardware
-    \item Implementing Only Critical Software Solutions
-    \item Writing Efficient Python Code
-\end{enumerate}
+will be discussed in this section. As discussed in Section \ref{sec:init-sys-specs}
 \subsubsection{Time Constraints}
-The main factor which imposed constraints on Team 3 during the Fall 2024 semester was time. The team had approximately 3 months to develop
-a solution that would satisfy the requirement of the SoFab team, and this meant that Team 3 needed to act fast to develop their product.
-This deadline itself imposed constraints on the team, such as how often and with what intensity the team needed to act, however it was 
-also the primary factor in imposing technical limitation. Team 3 simply had no time to learn a new programming language 
-comprehensively 
-prior to implementing a solution. This was the driving factor in the selection of a familiar and well-supported programming language 
-such as \textit{Python.} 
 
-Furthermore, meeting dates with the SoFab team imposed constraints in that signicant progress was expected of the team approximately
-every 2 weeks, when meetings would occur. After one of these meetings had concluded, the team had 2 weeks to implement early versions
-of the discussed features to be showcased at the next meeting. This imposed an intensity that Team 3 needed to work with to be prepared
-for every meeting. 
+
 
 \section{Detailed Implementation} 
-\label{sec:det-imp}
-The below sections include the specific actions and steps taken by Team 3 to develop the solution to SoFab Inks inventory management
-problem with project requirements and constraints accounted for. 
+
 \subsection{Hardware Detailed Implementation}
-While the solution developed over the course of this project was constructed primarily of software components, some hardware components 
-were required to meet and exceed the requirements of SoFab Inks. The primary hardware components are covered in detail below.
-\subsubsection{A Home for A Database}
-As discussed in previous sections, in order to develop software that improved significantly on SoFab team members experience of managing
-inventory, a database system was required. Once this was decided, the main point of emphasis was how to implement this requirement as 
-safely as possible. Team 3 wanted to ensure with certainty that SoFabs sensitive and irreplaceable company data would be both secure 
-and redundant to a avoid a catastrophic data loss scenario. This requirement however was not without mild cost. 
 
-The security of the database was a matter for the software implementation, however, redundancy required multiple storage locations to 
-to ensure multiple independent copies of the database are available at any given time. For this reason Team 3 decided to purchase 2 
-1 Terabyte solid-state storage drives, intended to each contain separate copies of the database. One of these disks would contain the 
-current working version of the database at all times, while the other drive would contain backups that would be conducted on a daily 
-basis. The team could even write a script in such a way to keep record of each backup instead of overwriting the backup each day with the 
-new copy. This would allow the team to inspect the database at any given point in its history if required. 
-
-Furthermore, investing in these drives at the beginning of the project life-cycle improved the experience of the transition to the 
-installation site significantly. Because the team was able to develop the project on the purchased SSDs,\footnote{SSD is a computational
-term for Solid State storage Disk} when the project was transferred on-site, the team could simply bring the drive containing the up-to-date
-software stack, point the lab computer to this disk, and have the project up-and-running. 
-\subsubsection{A Barcode Scanning Interface} 
-An additional piece of hardware needed to meet the full requirements of the SoFab team was a barcode\slash QR code label scanner that 
-would allow the team to simply scan product to view their corresponding inventory details. While the SoFab team would be unable to keep 
-the scanner that Team 3 purchased for development due to university rules, this product was inexpensive and in SoFab Inks' reasonble price
-range. The team conducted research into barcode scanning technology to discover what attributes made a good scanner. 
-
-Team 3 found that most barcode capable hardware scanners could double as QR code scanners, with little differences in feature sets between
-available models. For this reason the team sought an affordable wireless model that would allow SoFab to walk around their laboratory and 
-scan products instead of being required to retrieve products first. The implementation of this barcode scanning technology required little
-beyond purchasing the product. Once received, Team 3 could simply plug the scanner's bundled USB dongle into any computer, scan a barcode 
-or QR code while inside a text field, and the scanner would take care of the rest. This purchase made the development of this 
-feature simple and instantly partially fulfilled a requirement set out by SoFab Inks for their inventory management system. 
 \subsection{Software Detailed Implementation}
-The vast majority of effort expended by members of Team 3 this semester was in the domain of software. The team worked to utilize a 
-combination of existing and custom-built software to provide an inventory management system that would satisfy requirements laid out 
-by SoFab Inks. The individual pieces of software that played major roles in constructing this solution are discussed at length in the 
-below sections.
-\subsubsection{A Home Development Server}
-Due to the nature of the software being developed, Team 3 identified a need to create a centralized server that would allow members to 
-access the software from any location at any time. During the early weeks of development, the team was using existing tools and 
-services to develop a solution such as PostgreSQL and Budibase instead of writing custom code. Development with these services would 
-benefit substantially from running on a centralized server that could be modified by any team member. This would be far more efficient 
-than developing solutions individually and compiling them into one solution at a later time. 
-
-An added benefit of creating a centralized server where all development would take place was that this server would closely mimic the 
-conditions of final installation. Upon installation, the software stack would be deployed on a single computer that would serve all 
-clients on a local area network. This experience would allow the members of Team 3 to work with an experience closer to that of an end 
-user. This allowed team members to experience bugs that would appear at the installation site and fix them as they arose. 
-
-To construct a home server that would host all services required for this project and allow all Team 3 members access, a computer 
-was set-up at a members home and given a static IP. This static IP would allow DNS services and the home router to find a constant path 
-to the services to be accessed. Next, it was time to install all the existing services that would be required to develop the project. This 
-software will be discussed at length in Section \ref{sec:docker}. All services were installed and initialized. 
-
-Next, a Nginx server 
-running on another computer was configured as a reverse-proxy. A reverse-proxy is a service that acts as an intermediary for servers or 
-services running on a local network. A reverse proxy intakes network requests and forwards them to the server where they are hosted. 
-The benefits that a reverse-proxy offers to users is that only one 
-port is required to be exposed to the internet. This reduces the number of open ports on a network, offering security benefits. Additionally,
-reverse-proxies can be configured to use HTTPS,\footnote{Hypertext Transfer Protocol \textit{Secure.}} also enhancing the security of data 
-\textit{transmission}. Finally, reverse-proxies can also provide load balancing services, reducing strain on any one server on the 
-network. 
-
 \subsubsection{Docker-Compose}
-\label{sec:docker}
-Docker - and its supplemental software Docker-Compose and Docker Desktop - played a pivotal role during the development of this project.
-Docker is a software that allows applications to be packed into `containers'. This allows these pieces of software run in isolation from 
-other software, be more easily configured, and be isolated from the host system network which can enhance software security. Docker 
-containers share similarities with classical virtual machines in that they provide environments that are isolated from the host machine, 
-Docker containers differ in a few main respects that are important to note in this context. 
-
-Virtual machines are known for the performance penalty that accompanies their use. This is because virtual machines are tasked with 
-emulating an entire operating system, which is a very complicated and resource intensive endeavor. Docker containers work to alleviate 
-this performance problem by \textit{sharing the host's operating system kernel}. This allows Docker to focus on the application 
-software itself, without the need to emulate existing operating system features. 
 \subsubsection{PostgreSQL}
-
-Expanding on these benefits, Docker-Compose provides the ability to roll multiple docker containers into one centralized script, 
-where all software to be used for a given project can be managed at once. One can specify version numbers, customize network configurations,
-assign storage mounts,\footnote{Storage mounts are locations in a computer where files are located.}, allocate extra resources,
-\footnote{An example of an extra resource would be allocating GPU resources for a container.} and more. 
-
-The incredible benefits that 
-this provides when developing an application to be deployed on another system cannot be overstated. What Docker-Compose allowed Team 3 
-to do over the course of this project is to develop a software stack with versions of software that were compatible with one another. The
-team installed this software on a Windows 11 machine to mimic the operating system in use at the site of eventual installation, reducing 
-possible complication with system migration. Using these methods, Team 3 could be confident when the time came system migration and 
-installation, that all software would be compatible and work together smoothly, keeping all existing data in tact. 
-
 \subsubsection{PgAdmin4}
 \begin{figure}[h!]
     \centering

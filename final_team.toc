@@ -1,39 +1,45 @@
-\contentsline {section}{\numberline {1}Introduction\slash Executive Summary}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Introducing SoFab Inks}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}SoFab Inks Inventory Management Problem}{4}{subsection.1.2}%
-\contentsline {section}{\numberline {2}System Description}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Needs Assessment\slash System Requirements}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Initial System Specification}{6}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Selecting a Database}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Selecting an Interface}{7}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}A Language for Custom Software}{8}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Final Specifications}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}System Diagrams}{11}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{11}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{11}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{11}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Detailed Implementation}{11}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{11}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{11}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Docker-Compose}{11}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}PostgreSQL}{11}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}PgAdmin4}{11}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Budibase}{11}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Python Database Insertion\slash Label Generation}{14}{subsubsection.3.2.5}%
-\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{15}{section.4}%
-\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{15}{section.5}%
-\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{15}{section.6}%
-\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{16}{section.7}%
-\contentsline {section}{\numberline {8}Conclusions}{16}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{16}{section.9}%
-\contentsline {section}{References}{16}{section*.6}%
-\contentsline {section}{Appendices}{17}{section*.7}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{17}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{17}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{17}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{17}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{17}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{17}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{17}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{17}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{17}{appendix.I}%
+\contentsline {section}{\numberline {1}Introduction\slash Executive Summary}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introducing SoFab Inks}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}SoFab Inks Inventory Management Problem}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}System Description}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Needs Assessment\slash System Requirements}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Initial System Specification}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Selecting a Database}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Selecting an Interface}{8}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}A Language for Custom Software}{9}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Final Specifications}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}System Diagrams}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{12}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{12}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{12}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Economic Constraints}{12}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Technical Constraints}{13}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Time Constraints}{14}{subsubsection.2.7.3}%
+\contentsline {section}{\numberline {3}Detailed Implementation}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{15}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}A Home for A Database}{15}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}A Barcode Scanning Interface}{15}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}A Home Development Server}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Docker-Compose}{17}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}PostgreSQL}{17}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{18}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Budibase}{18}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{21}{subsubsection.3.2.6}%
+\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{22}{section.4}%
+\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{22}{section.5}%
+\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{22}{section.6}%
+\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{23}{section.7}%
+\contentsline {section}{\numberline {8}Conclusions}{23}{section.8}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{23}{section.9}%
+\contentsline {section}{References}{23}{section*.6}%
+\contentsline {section}{Appendices}{24}{section*.7}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{24}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sheets}{24}{appendix.B}%
+\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{24}{appendix.C}%
+\contentsline {section}{\numberline {D}Source Code}{24}{appendix.D}%
+\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{24}{appendix.E}%
+\contentsline {section}{\numberline {F}Software Installation Instructions}{24}{appendix.F}%
+\contentsline {section}{\numberline {G}User Manual}{24}{appendix.G}%
+\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{24}{appendix.H}%
+\contentsline {section}{\numberline {I}White Papers}{24}{appendix.I}%
