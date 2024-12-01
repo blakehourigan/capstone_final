@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  1 DEC 2024 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  1 DEC 2024 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,88 +401,137 @@ Overfull \hbox (2.04132pt too wide) in paragraph at lines 190--195
 nts pre-vi-ously dis-cussed were
  []
 
-[10] [11] [12] [13] [14] [15] [16] [17]
-<pictures/pg_admin.png, id=352, 1082.0425pt x 1233.60875pt>
+[10] [11] [12] [13] [14] [15] [16] [17] [18]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+459.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+<pictures/postgres_users.png, id=393, 704.6325pt x 286.06876pt>
+File: pictures/postgres_users.png Graphic file (type png)
+<use pictures/postgres_users.png>
+Package pdftex.def Info: pictures/postgres_users.png  used on input line 482.
+(pdftex.def)             Requested size: 284.52756pt x 115.51236pt.
+<pictures/postgres_dbs.png, id=394, 1280.785pt x 293.095pt>
+File: pictures/postgres_dbs.png Graphic file (type png)
+<use pictures/postgres_dbs.png>
+Package pdftex.def Info: pictures/postgres_dbs.png  used on input line 488.
+(pdftex.def)             Requested size: 284.52756pt x 65.10721pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19] [20 <./pictures/postgres_users.png (PNG copy)> <./pictures/postgres_dbs.pn
+g (PNG copy)>]
+<pictures/pg_admin.png, id=430, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
-Package pdftex.def Info: pictures/pg_admin.png  used on input line 431.
-(pdftex.def)             Requested size: 142.26378pt x 162.18181pt.
-<pictures/pg_admin2.png, id=353, 739.76375pt x 1012.78375pt>
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 521.
+(pdftex.def)             Requested size: 170.71652pt x 194.6144pt.
+
+Overfull \hbox (15.46758pt too wide) in paragraph at lines 521--522
+ [][] 
+ []
+
+<pictures/pg_admin2.png, id=431, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
-Package pdftex.def Info: pictures/pg_admin2.png  used on input line 437.
-(pdftex.def)             Requested size: 142.26378pt x 194.76443pt.
-<pictures/budibase.png, id=354, 2569.6pt x 1168.365pt>
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 527.
+(pdftex.def)             Requested size: 170.71652pt x 233.72351pt.
+
+Overfull \hbox (15.46758pt too wide) in paragraph at lines 527--528
+ [][] 
+ []
+
+[21 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
+<pictures/pg_admin_erd.png, id=442, 1969.3575pt x 1587.9325pt>
+File: pictures/pg_admin_erd.png Graphic file (type png)
+<use pictures/pg_admin_erd.png>
+Package pdftex.def Info: pictures/pg_admin_erd.png  used on input line 567.
+(pdftex.def)             Requested size: 341.43306pt x 275.29976pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22]
+<pictures/budibase.png, id=452, 2569.6pt x 1168.365pt>
 File: pictures/budibase.png Graphic file (type png)
 <use pictures/budibase.png>
-Package pdftex.def Info: pictures/budibase.png  used on input line 447.
+Package pdftex.def Info: pictures/budibase.png  used on input line 576.
 (pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pictures/budibase2.png, id=355, 2251.41125pt x 1169.36874pt>
+<pictures/budibase2.png, id=453, 2251.41125pt x 1169.36874pt>
 File: pictures/budibase2.png Graphic file (type png)
 <use pictures/budibase2.png>
-Package pdftex.def Info: pictures/budibase2.png  used on input line 453.
+Package pdftex.def Info: pictures/budibase2.png  used on input line 582.
 (pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase3.png, id=356, 2312.64pt x 1179.40625pt>
+<pictures/budibase3.png, id=454, 2312.64pt x 1179.40625pt>
 File: pictures/budibase3.png Graphic file (type png)
 <use pictures/budibase3.png>
-Package pdftex.def Info: pictures/budibase3.png  used on input line 459.
+Package pdftex.def Info: pictures/budibase3.png  used on input line 588.
 (pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
-[19 <./pictures/budibase.png (PNG copy)> <./pictures/budibase2.png (PNG copy)>]
-[20 <./pictures/budibase3.png (PNG copy)>]
+[23 <./pictures/pg_admin_erd.png> <./pictures/budibase.png (PNG copy)>]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [21
-
-] [22]
-Underfull \hbox (badness 6675) in paragraph at lines 553--555
+) [24 <./pictures/budibase2.png (PNG copy)> <./pictures/budibase3.png (PNG copy
+)>] [25] [26]
+Underfull \hbox (badness 6675) in paragraph at lines 684--686
 \OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
 ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
  []
 
-[23] [24] (./final_team.aux)
+
+Underfull \hbox (badness 3942) in paragraph at lines 702--705
+[]\OT1/cmr/m/n/10 Budibase, \OT1/cmr/m/it/10 Docker Com-pose File for Host-ing\
+OT1/cmr/m/n/10 , GitHub Repos-i-tory,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
+[]$\OT1/cmtt/m/n/10 https : / / raw . githubusercontent . com / Budibase / budi
+base / master /
+ []
+
+[27] [28] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: DD42CD7A3E4C7A17BEC91FDFA4523ADA;8626.
+(rerunfilecheck)             Checksum: F721B21F8455A361687858276A6E2A44;8823.
  ) 
 Here is how much of TeX's memory you used:
- 13239 strings out of 476076
- 206975 string characters out of 5793775
- 2163187 words of memory out of 5000000
- 35057 multiletter control sequences out of 15000+600000
- 563991 words of font info for 56 fonts, out of 8000000 for 9000
+ 13391 strings out of 476076
+ 210056 string characters out of 5793775
+ 2143187 words of memory out of 5000000
+ 35153 multiletter control sequences out of 15000+600000
+ 564647 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,417b,2036s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,417b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfrm1000.pfb>
-Output written on final_team.pdf (24 pages, 751980 bytes).
+ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on final_team.pdf (28 pages, 1114411 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 148 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -297,7 +297,7 @@ The next primary factor which constrained Team 3 during the development of the s
 constraints. The limitations in technical ability discussed here coincide with time constrains, however technical ability specifically 
 will be discussed in this section. As discussed in Section \ref{sec:init-sys-specs}, Team 3 was limited technically in that all team 
 members had the most familiarity with one programming language - \textit{Python}. This imposed several technical limitations including 
-reliability and efficiency that were traded for familiarity, ease-of-use, and lirary availability. The Rust programming language's 
+reliability and efficiency that were traded for familiarity, ease-of-use, and library availability. The Rust programming language's 
 memory safety features, combined with its status as a compiled language held much in the way of potential benefits for the development 
 of this project. However, due to Team 3's unfamiliarity with the language, these potential benefits became limitations by use of Python, 
 which faces challenges both with reliability and efficiency. 
@@ -352,7 +352,7 @@ new copy. This would allow the team to inspect the database at any given point i
 
 Furthermore, investing in these drives at the beginning of the project life-cycle improved the experience of the transition to the 
 installation site significantly. Because the team was able to develop the project on the purchased SSDs,\footnote{SSD is a computational
-term for Solid State storage Disk} when the project was transferred on-site, the team could simply bring the drive containing the up-to-date
+term for Solid State storage Disk.} when the project was transferred on-site, the team could simply bring the drive containing the up-to-date
 software stack, point the lab computer to this disk, and have the project up-and-running. 
 \subsubsection{A Barcode Scanning Interface} 
 An additional piece of hardware needed to meet the full requirements of the SoFab team was a barcode\slash QR code label scanner that 
@@ -400,18 +400,17 @@ network.
 \subsubsection{Docker-Compose}
 \label{sec:docker}
 Docker - and its supplemental software Docker-Compose and Docker Desktop - played a pivotal role during the development of this project.
-Docker is a software that allows applications to be packed into `containers'. This allows these pieces of software run in isolation from 
-other software, be more easily configured, and be isolated from the host system network which can enhance software security. Docker 
+Docker is a software that allows applications to be packed into `containers'. This allows these pieces of software to run in isolation from 
+other software, be more easily configured, and be isolated from the host system network which can enhance software security. While Docker 
 containers share similarities with classical virtual machines in that they provide environments that are isolated from the host machine, 
-Docker containers differ in a few main respects that are important to note in this context. 
+Docker containers differ in a few major respects that are important to note in this context. 
 
 Virtual machines are known for the performance penalty that accompanies their use. This is because virtual machines are tasked with 
-emulating an entire operating system, which is a very complicated and resource intensive endeavor. Docker containers work to alleviate 
+emulating an entire operating system, which is a very complicated and resource intensive task. Docker containers work to alleviate 
 this performance problem by \textit{sharing the host's operating system kernel}. This allows Docker to focus on the application 
 software itself, without the need to emulate existing operating system features. 
-\subsubsection{PostgreSQL}
 
-Expanding on these benefits, Docker-Compose provides the ability to roll multiple docker containers into one centralized script, 
+Expanding on these benefits, Docker-Compose provides the ability to roll multiple Docker containers into one centralized script, 
 where all software to be used for a given project can be managed at once. One can specify version numbers, customize network configurations,
 assign storage mounts,\footnote{Storage mounts are locations in a computer where files are located.}, allocate extra resources,
 \footnote{An example of an extra resource would be allocating GPU resources for a container.} and more. 
@@ -420,27 +419,157 @@ The incredible benefits that
 this provides when developing an application to be deployed on another system cannot be overstated. What Docker-Compose allowed Team 3 
 to do over the course of this project is to develop a software stack with versions of software that were compatible with one another. The
 team installed this software on a Windows 11 machine to mimic the operating system in use at the site of eventual installation, reducing 
-possible complication with system migration. Using these methods, Team 3 could be confident when the time came system migration and 
-installation, that all software would be compatible and work together smoothly, keeping all existing data in tact. 
+possible complications with system migration. Using these methods, Team 3 could be confident when the time for system 
+migration came, that all software would be compatible and work together smoothly, keeping all existing data intact. 
+
+This technology removed a great burden from Team 3, and the effort placed into creating a stable software stack through Docker-Compose 
+was rewarded upon migration to SoFab's laboratory in late November 2024. This will be explained in greater detail in a later section.
+The software that was integrated into this Docker-Compose stack included the database software PostgreSQL, the database management 
+software PgAdmin4, and database frontend design software Budibase. 
+
+Most developers that provide the ability to deploy an application via Docker provide example Docker-Compose scripts defining the 
+critical application configurations and environment variables to deploy the application. This was very beneficial to Team 3 for the 
+development of this software stack, as examples for deploying PostgreSQL, PgAdmin4, and Budibase were found, accelerating deployment.
+\cite{dockerhub-postgres} \cite{dockerhub-pgadmin} \cite{budibase-docker-compose}A sample of the final Docker-Compose Script is 
+included below. 
+
+\begin{lstlisting}[language=yaml]
+ postgres:
+   image: postgres:16
+   volumes:
+     - type: bind
+       source: "D:/Docker Data/postgres_data"
+       target: /var/lib/postgresql/data
+   ports:
+     - "5432:5432"
+   restart: always
+   container_name: postgres
+   # set shared memory limit when using docker-compose
+   shm_size: 128mb
+   # or set shared memory limit when deploy via swarm stack
+   environment:
+     POSTGRES_PASSWORD: {POSTGRES_PASSWORD}
+   extra_hosts:
+     - "--add-host host.docker.internal:host-gateway"
+
+ pgadmin4:
+       image: elestio/pgadmin
+       restart: always
+       environment:
+         PGADMIN_DEFAULT_EMAIL: ${ADMIN_EMAIL}
+         PGADMIN_DEFAULT_PASSWORD: ${ADMIN_PASSWORD}
+         PGADMIN_LISTEN_PORT: 8080
+       ports:
+         - "0.0.0.0:8080:8080"
+       volumes:
+         - pg_admin_data:/var/lib/pgadmin
+
+volumes: 
+  pg_admin_data:
+\end{lstlisting}
+\subsubsection{PostgreSQL}
+Once the Docker-Compose script was defined and all software was deployed on the home server machine and exposed to all Team 3 members, 
+application specific configuration began for PostgreSQL. User accounts were created (Figure \ref{fig:psql_users}) for each team member,
+and credentials were distributed. Team 3 then initialized the database for the project (Figure \ref{fig:psql_dbs}), and set 
+user privileges. PosgreSQL's user creation tool was utilized to add an additional account `database dev' which would be given privileges
+to read, add, create, and delete on the database. These permissions could then be applied recursively to each user account, streamlining
+the permissions process. 
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=10cm]{"postgres_users.png"}
+        \caption{Viewing existing users in the PSQL CLI interface.}
+        \label{fig:psql_users}
+    \end{subfigure}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=10cm]{"postgres_dbs.png"}
+        \caption{Viewing existing tables in the PSQL CLI interface.}
+        \label{fig:psql_dbs}
+    \end{subfigure}
+    \caption{}
+    \label{fig:posgres_cli}
+\end{figure}
+\FloatBarrier
 
 \subsubsection{PgAdmin4}
+With the database initialized, the team could begin work on constructing a relational database in PSQL\footnote{PSQL stands for PostgreSQL.}
+that modeled the daily workflow in the SoFab Inks lab. However, Team 3 felt that it would be quite inefficient to develop in the 
+PSQL CLI\footnote{CLI stands for Command Line Interface in a computer terminal}. Members felt that it would be difficult to grasp the 
+relations in a database and quickly view the attributes of a database with this interface, especially due to the length of time members
+had gone without working on database systems. Unfamilarity would lead to frustration and confusion through this method of interaction. 
+For this reason members of the team began to seek out away to interact with a database system with a graphical user interface. 
+
+Quickly, members found that there existed a GUI\footnote{Graphical User Interface.} tool build specifically for PSQL called `PgAdmin4'. 
+Best of all, this software was developed by a core member of the PSQL team! PgAdmin4 boasted features such as graphical management of 
+existing attributes including databse schemas, tables, types, trigger functions, and more. This would allow the team to manage the 
+database visually in a way that would allow members to quickly and easily learn the tools available at their disposal in PSQL. Additionally,
+this tool allowed for the execution of database queries, giving developers all the power of CLI PSQL in addition to the GUI tools. 
+
+PgAdmin4 was deployed in the projects Docker-Compose script and deployed alongside PSQL. Once deployed, user accounts were created and 
+configured to access the PSQL database as these accounts. At this stage Team 3 could begin constructing the database while avoiding
+the overwhelming nature of a CLI tool to interface with the database system. Examples of the deployed instance after the insertion of 
+tables can be found in Figures \ref{fig:pg_admin_tables}, and \ref{fig:pg_admin_queries}. More images can be found on PgAdmin4's webpage.
+\cite{pgadmin-screenshots}
+
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{.45\textwidth}
         \centering
-        \includegraphics[width=5cm]{"pg_admin.png"}
+        \includegraphics[width=6cm]{"pg_admin.png"}
         \caption{Viewing existing tables in PgAdmin interface.}
         \label{fig:pg_admin_tables}
     \end{subfigure}
     \begin{subfigure}[b]{.45\textwidth}
         \centering
-        \includegraphics[width=5cm]{"pg_admin2.png"}
-        \caption{Running PostgreSQL queries inside of PgAdmin4.}
+        \includegraphics[width=6cm]{"pg_admin2.png"}
+        \caption{Running PostgreSQL queries inside PgAdmin4.}
         \label{fig:pg_admin_queries}
     \end{subfigure}
     \caption{}
     \label{fig:pg_admin_figs}
 \end{figure}
+\FloatBarrier
+
+In regard to the construction of the database, the same general process was followed for three primary forms of inventory in use 
+at the SoFab team's lab. These consisted in `Product Inventory' which contained information about the company's products, 
+`General Inventory' which contained general lab items such as beakers and shipping boxes, and `Chemical Inventory' which the 
+company used as ingredients to their products. SoFab desired to have information about these items at each stage in their life-cycle. 
+While this cycle changed depending on the type of inventory an item originated from, the process of creating tables to accomplish this
+effect would remain the same. 
+
+The general process follows below.
+\begin{enumerate}
+    \item \textbf{Create a Table for the \textit{Item}} - A table would be created for the type of inventory item, containing any 
+        \textit{static}, or, constantly present, information about this type of item. This item would also contain the \textit{ID}, 
+        which would be used to link each row, which represented one item, to related rows in other tables. 
+    \item \textbf{Create a Table for Each Life \textit{Stage}} - Next, team members would construct tables that represented a stage in a 
+        product's life. For example, the `Product' inventory may have product table containing the ID of this product, chemicals used to 
+        create this product, and in what amount, and other related information. Then, for each stage in a manufacturing process, 
+        tables could be generated that would track specific information about actions performed on the item at this step. This was an
+        important attribute, as this would give SoFab the ability to easily review the histories of successful batches, and be able to 
+        recreate the product as closely as possible. 
+
+        Similar steps would be followed for other categories of items, tracking information at every step related to an item that was 
+        necessary as instructed by SoFab team members. 
+    \item \textbf{Building Table \textit{Relationships}} - An important last step in the creation of the database is creating links 
+        that connect tables together in terms of their relation to one another. This was generally accomplished by linked item IDs to 
+        each other via `foreign keys', that helped the database understand the connections between different tables. A major benefit of 
+        this relation creation is that it enables automatic generation of ERD\footnote{Entity Relationship Diagram.} diagrams. These 
+        diagrams aid developers by visually representing database tables. An example of an ERD for this database can be found in 
+        Figure \ref{fig:pg_admin_erd}.
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{"pg_admin_erd.png"}
+    \caption{ERDs help developers understand how tables are related.}
+    \label{fig:pg_admin_erd}
+\end{figure}
+\FloatBarrier
+
 \subsubsection{Budibase}
 \begin{figure}[h!]
     \centering
@@ -517,6 +646,8 @@ def generate_checkboxes(self, images=False):
         checkbox.pack(anchor="w", fill="x")
 \end{lstlisting}
 
+\subsubsection{Deployment to SoFab Labs}
+
 EAC 1. Identify, formulate, and solve complex engineering problems by 
 applying principles of engineering, science, and mathematics and EAC 2. 
 Apply engineering design to produce solutions that meet specified needs with 
@@ -568,6 +699,21 @@ Python Software Foundation,
 \textit{The Python Package Index (PyPI)}, 
 \url{https://pypi.org/}, 
 accessed on: November 29, 2024.
+\bibitem{budibase-docker-compose} Budibase, \textit{Docker Compose File for Hosting}, 
+GitHub Repository, \url{https://raw.githubusercontent.com/Budibase/budibase/master/hosting/docker-compose.yaml}, 
+Accessed on: November 27, 2024.
+\bibitem{dockerhub-postgres} PostgreSQL Maintainers, 
+\textit{PostgreSQL Docker Official Image}, Docker Hub, 
+\url{https://hub.docker.com/_/postgres}, 
+Accessed on: November 27, 2024.
+\bibitem{dockerhub-pgadmin} Elestio, 
+\textit{pgAdmin Docker Image}, Docker Hub, 
+\url{https://hub.docker.com/r/elestio/pgadmin}, 
+Accessed on: November 27, 2024.
+\bibitem{pgadmin-screenshots} pgAdmin Development Team, 
+\textit{pgAdmin Screenshots}, pgAdmin Official Website, 
+\url{https://www.pgadmin.org/screenshots/#4}, 
+Accessed on: December 1, 2024.
 \end{thebibliography}
 
 

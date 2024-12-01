@@ -22,24 +22,25 @@
 \contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{16}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}A Home Development Server}{16}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Docker-Compose}{17}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}PostgreSQL}{17}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{18}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Budibase}{18}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{21}{subsubsection.3.2.6}%
-\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{22}{section.4}%
-\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{22}{section.5}%
-\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{22}{section.6}%
-\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{23}{section.7}%
-\contentsline {section}{\numberline {8}Conclusions}{23}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{23}{section.9}%
-\contentsline {section}{References}{23}{section*.6}%
-\contentsline {section}{Appendices}{24}{section*.7}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{24}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{24}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{24}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{24}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{24}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{24}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{24}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{24}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{24}{appendix.I}%
+\contentsline {subsubsection}{\numberline {3.2.3}PostgreSQL}{19}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{20}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Budibase}{23}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{24}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}Deployment to SoFab Labs}{26}{subsubsection.3.2.7}%
+\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{26}{section.4}%
+\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{26}{section.5}%
+\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{26}{section.6}%
+\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{26}{section.7}%
+\contentsline {section}{\numberline {8}Conclusions}{27}{section.8}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{27}{section.9}%
+\contentsline {section}{References}{27}{section*.8}%
+\contentsline {section}{Appendices}{28}{section*.9}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{28}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sheets}{28}{appendix.B}%
+\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{28}{appendix.C}%
+\contentsline {section}{\numberline {D}Source Code}{28}{appendix.D}%
+\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{28}{appendix.E}%
+\contentsline {section}{\numberline {F}Software Installation Instructions}{28}{appendix.F}%
+\contentsline {section}{\numberline {G}User Manual}{28}{appendix.G}%
+\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{28}{appendix.H}%
+\contentsline {section}{\numberline {I}White Papers}{28}{appendix.I}%
