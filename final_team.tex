@@ -169,6 +169,49 @@ component use, connecting the service to the database software in use, and much 
 many instructional videos and how-tos on their website and on their company YouTube page. \cite{budibase-youtube}
 
 \subsubsection{A Language for Custom Software}
+After selections were made for database and user-interface software, discussions were held on the topic of how the final major piece 
+of the software stack - the custom label printing interface - would be constructed. Team 3 understood SoFab's requirement for this 
+deliverable - that the software create printable labels to place on their inventory - but Team 3 imposed additional requirements
+that would support the team to fulfill the company's requirement. These requirements were identified as follows. 
+\begin{enumerate}
+    \item \textbf{Familiarity} - The most important requirement that was identified by Team 3 during these discussions was familiarity 
+        among team members with various programming languages. Due to semester imposed time constraints, it would be important to hit 
+        the ground running, without additional challenges of learning an unfamiliar programming language. A consensus was reached that 
+        team members all had prior experience with \textit{Python}. This prior experience, paired with the languages intuitive syntax
+        made Python an attractive choice with regard to this requirement. 
+    \item \textbf{Community Support\slash Libraries} - Another important requirement concerning the selection of an optimal programming 
+        language to develop this new software was community support and library availability. Once again, \textit{Python} was identified
+        as a language with great strength in this aspect. Python is known for its extensive library support, with over 589,000 projects
+        in the `pypi' Python package repositories. \cite{pypi} Packages were identified that would allow Team 3 to easily generate 
+        barcodes, generate PDF outputs, and read from PostgreSQL databases. These features attributed to the appeal of Python for the 
+        development of this deliverable. 
+    \item \textbf{Reliability\slash Durability} - The two requirements previously discussed were found to be great strengths of the 
+        Python language. However, an additional consideration for selection for this custom software was the durability of the language. 
+        A reasonable argument could be made that the responsibility of ensuring reliability and durability of code lies with the 
+        programmer, and not the language that a programmer may employ. However, humans have proven to be much less reliable than 
+        machines in many domains with defined rules. 
+
+        Recent developments in the programming domain such as the Rust language have built 
+        this fact of reality into the fabric of the language. These such languages provide memory safety by default, meaning that the 
+        programmer must have advanced knowledge of the language before performing potentially dangerous programmatic actions. Rust also 
+        provides an excellent ecosystem of tools such as `Cargo' which both manages project dependencies and provides an easy method to
+        run and test written code. Rust offers many benefits that Team 3 believed could be incredibly beneficial for a project that would 
+        need to be consistent and reliable day-to-day at SoFab Inks.
+    \item \textbf{Speed\slash Efficiency} - A final major consideration in choosing a programming language was the speed that the chosen
+        language would provide after development. Performance is \textit{always} an important consideration, but this was  
+        especially true with Team 3's plan to install many pieces of software on one machine on final deployment. On this point, Rust 
+        again was found to have great advantages. Compared to Python, Rust is far more efficient, as it is 
+        a compiled language. This means that at program run-time, no `interpretation' of the code is required. This essentially shifts much
+        of the heavy computational lifting to the code `compilation' process, allowing the program to execute more efficiently at run-time. 
+\end{enumerate}
+
+Upon reviewing the major points of consideration, Team 3 decided that Familiarity and Comunity Support\slash Library availability were 
+critical attributes in the lanuage selection process. While a language such as Rust provided significany boosts in execution time
+and Reliability, both of which would be beneficial to the end user, it was decided that the team had too little familiarity with this 
+language. Learning a new language as a team would increase the complexity of the project too greatly, and endanger Team 3's ability to
+produce a satisfactory product on-time. It was for these reasons that Team 3 decided to select Python as the language of choice for the 
+development of this additional software, pending approval by the SoFab team during the next meeting. 
+
 
 (External design document) 
     EAC 1. Identify, formulate, and solve complex engineering problems by 
@@ -177,6 +220,24 @@ many instructional videos and how-tos on their website and on their company YouT
     and other relevant disciplines to identify solutions) 
 
 \subsection{Final Specifications}
+Little changed with regard to the major required specifications of chosen software over the course of this project. While minor changes
+were implemented in requirements with regard to specific data tracking points or tracking methods, these could all be accomodated within
+the existing framework. For this reason the majority of the final technical specifications were set during the meeting that followed
+Team 3's discussion of initial specifications for the system.
+
+Team 3 met with the SoFab team to discuss the specifications that Team 3 had arrived at as results of the prior discussions. The team 
+wanted to ensure that these specifications aligned with the needs and vision of the company. Team 3 proposed the previously discussed
+database and user-interface solutions, with brief technical demonstrations showcasing the potential of these pieces of software as 
+solutions to the inventory management problem. SoFab responded positively, with few notes with regard to the technical decisions reached 
+by Team 3. 
+
+For these reasons the following selections were made final as software solutions for this project.
+
+\begin{itemize}
+    \item \textbf{Database System} - PostgreSQL
+    \item \textbf{User-Interface\slash CRUD Frontend} - Budibase
+    \item \textbf{Programming Language for Custom Software} - Python
+\end{itemize}
 (finalized internal design document) 
     EAC 1. Identify, formulate, and solve complex engineering problems by 
     applying principles of engineering, science, and mathematics and CAC 1. 
@@ -350,6 +411,11 @@ Budibase,
 \textit{Budibase YouTube Channel}, YouTube, 
 \url{https://www.youtube.com/@Budibase}, 
 accessed on: November 28, 2024.
+\bibitem{pypi} 
+Python Software Foundation, 
+\textit{The Python Package Index (PyPI)}, 
+\url{https://pypi.org/}, 
+accessed on: November 29, 2024.
 \end{thebibliography}
 
 

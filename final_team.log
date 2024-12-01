@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  29 NOV 2024 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  30 NOV 2024 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,74 +343,76 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7] 
 [8]
-<pictures/pg_admin.png, id=263, 1082.0425pt x 1233.60875pt>
+Overfull \hbox (2.04132pt too wide) in paragraph at lines 188--193
+[]\OT1/cmr/bx/n/10 Reliability/Durability \OT1/cmr/m/n/10 - The two re-quire-me
+nts pre-vi-ously dis-cussed were
+ []
+
+[9] [10]
+<pictures/pg_admin.png, id=277, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
-Package pdftex.def Info: pictures/pg_admin.png  used on input line 218.
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 279.
 (pdftex.def)             Requested size: 142.26378pt x 162.18181pt.
-<pictures/pg_admin2.png, id=264, 739.76375pt x 1012.78375pt>
+<pictures/pg_admin2.png, id=278, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
-Package pdftex.def Info: pictures/pg_admin2.png  used on input line 224.
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 285.
 (pdftex.def)             Requested size: 142.26378pt x 194.76443pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase.png, id=265, 2569.6pt x 1168.365pt>
+<pictures/budibase.png, id=279, 2569.6pt x 1168.365pt>
 File: pictures/budibase.png Graphic file (type png)
 <use pictures/budibase.png>
-Package pdftex.def Info: pictures/budibase.png  used on input line 234.
+Package pdftex.def Info: pictures/budibase.png  used on input line 295.
 (pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase2.png, id=266, 2251.41125pt x 1169.36874pt>
+<pictures/budibase2.png, id=280, 2251.41125pt x 1169.36874pt>
 File: pictures/budibase2.png Graphic file (type png)
 <use pictures/budibase2.png>
-Package pdftex.def Info: pictures/budibase2.png  used on input line 240.
+Package pdftex.def Info: pictures/budibase2.png  used on input line 301.
 (pdftex.def)             Requested size: 341.43306pt x 177.3248pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase3.png, id=267, 2312.64pt x 1179.40625pt>
+<pictures/budibase3.png, id=281, 2312.64pt x 1179.40625pt>
 File: pictures/budibase3.png Graphic file (type png)
 <use pictures/budibase3.png>
-Package pdftex.def Info: pictures/budibase3.png  used on input line 246.
+Package pdftex.def Info: pictures/budibase3.png  used on input line 307.
 (pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] [10 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG cop
-y)> <./pictures/budibase.png (PNG copy)>] [11 <./pictures/budibase2.png (PNG co
-py)> <./pictures/budibase3.png (PNG copy)>]
+[11] [12 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG co
+py)> <./pictures/budibase.png (PNG copy)>] [13 <./pictures/budibase2.png (PNG c
+opy)> <./pictures/budibase3.png (PNG copy)>]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [12
+) [14
 
-] [13]
-Underfull \hbox (badness 6675) in paragraph at lines 340--342
+] [15]
+Underfull \hbox (badness 6675) in paragraph at lines 401--403
 \OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
 ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
  []
 
-[14] [15] (./final_team.aux)
+[16] [17] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `final_team.out' has not changed.
 (rerunfilecheck)             Checksum: 6BD8646498F45423587CFE10963F3B83;7524.
  ) 
 Here is how much of TeX's memory you used:
- 12331 strings out of 476076
- 191589 string characters out of 5793775
+ 12339 strings out of 476076
+ 191642 string characters out of 5793775
  2163187 words of memory out of 5000000
- 34207 multiletter control sequences out of 15000+600000
+ 34208 multiletter control sequences out of 15000+600000
  563639 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,8n,79p,417b,2032s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -426,10 +428,10 @@ r9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1000.pfb>
-Output written on final_team.pdf (15 pages, 715383 bytes).
+Output written on final_team.pdf (17 pages, 722857 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
