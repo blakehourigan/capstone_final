@@ -676,6 +676,12 @@ entire inventory. The result of these efforts is shown in Figure \ref{fig:budiba
     \caption{Budibase home page. Global search that searches all types of inventory via QR code or direct ID entry.}
     \label{fig:budibase_home}
 \end{figure}
+
+Finally, the last primary component developed on the Budibase front end was a page that would track the product orders received from 
+SoFab's customers and what shipment stage \footnote{Shipment stages included: received, packed, shipped, received}this order was in.
+Additionally, a customers page was added, allowing SoFab team members to view and edit customer details, as well as view each order 
+received from a given customer. Images displaying these pages are shown in Figures \ref{fig:bb-orders}, and \ref{fig:budibase_customers}.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=12cm]{"bb-orders.png"}
@@ -691,7 +697,18 @@ entire inventory. The result of these efforts is shown in Figure \ref{fig:budiba
 \end{figure}
 
 \FloatBarrier
+\clearpage
+
+At this stage of development, all required functionality from the user-interface for PSQL had been achieved. SoFab would receive a 
+database system that was user-friendly, easy-to-use, and that contained all required data attributes the company required. 
+
 \subsubsection{Python Database Insertion\slash Label Generation}
+The Python database insertion program was developed in parallel with the Postgres database and Budibase front end deliverables throughout 
+the semester. At the outset of the semester, as discussed previously, the program was found to be necessary to implement features such
+as barcode and label generation for easy product tracking in SoFab's lab. This would allow for clear labelling of important hazard 
+information, and significantly improve ease-of-use of the system by allowing users to scan barcodes to find details for items.
+
+
 \begin{lstlisting}[language=Python]
 class App(Tk):
     def __init__(self, controller):
