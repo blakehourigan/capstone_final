@@ -26,23 +26,23 @@
 \contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{20}{subsubsection.3.2.4}%
 \contentsline {subsubsection}{\numberline {3.2.5}Budibase}{23}{subsubsection.3.2.5}%
 \contentsline {paragraph}{Why Budibase?}{23}{section*.5}%
-\contentsline {paragraph}{Implmenting Budibase}{24}{section*.6}%
+\contentsline {paragraph}{Implementing Budibase}{24}{section*.6}%
 \contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{29}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}Deployment to SoFab Labs}{30}{subsubsection.3.2.7}%
-\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{30}{section.4}%
-\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{30}{section.5}%
-\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{30}{section.6}%
-\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{31}{section.7}%
-\contentsline {section}{\numberline {8}Conclusions}{31}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{31}{section.9}%
-\contentsline {section}{References}{31}{section*.13}%
-\contentsline {section}{Appendices}{32}{section*.14}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{32}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{32}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{32}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{32}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{32}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{32}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{32}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{32}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{32}{appendix.I}%
+\contentsline {subsubsection}{\numberline {3.2.7}Deployment to SoFab Labs}{34}{subsubsection.3.2.7}%
+\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{34}{section.4}%
+\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{34}{section.5}%
+\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{34}{section.6}%
+\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{35}{section.7}%
+\contentsline {section}{\numberline {8}Conclusions}{35}{section.8}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{35}{section.9}%
+\contentsline {section}{References}{35}{section*.15}%
+\contentsline {section}{Appendices}{36}{section*.16}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{36}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sheets}{36}{appendix.B}%
+\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{36}{appendix.C}%
+\contentsline {section}{\numberline {D}Source Code}{36}{appendix.D}%
+\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{36}{appendix.E}%
+\contentsline {section}{\numberline {F}Software Installation Instructions}{36}{appendix.F}%
+\contentsline {section}{\numberline {G}User Manual}{36}{appendix.G}%
+\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{36}{appendix.H}%
+\contentsline {section}{\numberline {I}White Papers}{36}{appendix.I}%

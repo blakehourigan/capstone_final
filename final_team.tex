@@ -338,6 +338,7 @@ problem with project requirements and constraints accounted for.
 While the solution developed over the course of this project was constructed primarily of software components, some hardware components 
 were required to meet and exceed the requirements of SoFab Inks. The primary hardware components are covered in detail below.
 \subsubsection{A Home for A Database}
+\label{sec:server}
 As discussed in previous sections, in order to develop software that improved significantly on SoFab team members experience of managing
 inventory, a database system was required. Once this was decided, the main point of emphasis was how to implement this requirement as 
 safely as possible. Team 3 wanted to ensure with certainty that SoFabs sensitive and irreplaceable company data would be both secure 
@@ -598,7 +599,7 @@ and has a rich documentation on the Budibase website \cite{budibase-docs} and on
 These pages contain instructions and guidance 
 for how to self-host Budibase, how to connect and use specific database software with Budibase, how to use the various components to 
 build desired interfaces, and more. All of these attributes made Budibase a great option to develop an interface for this project.
-\paragraph{Implmenting Budibase}
+\paragraph{Implementing Budibase}
 Implementing Budibase into the existing Docker-Compose software stack was a straightforward process. This was mostly due to Budibase's 
 provided documentation and existing Budibase Docker-Compose script. This script provided an excellent baseline to integrate into the 
 stack, modify slightly, and deploy onto the home server. Once deployed, Team 3 members were given user accounts and access to the 
@@ -705,9 +706,63 @@ database system that was user-friendly, easy-to-use, and that contained all requ
 \subsubsection{Python Database Insertion\slash Label Generation}
 The Python database insertion program was developed in parallel with the Postgres database and Budibase front end deliverables throughout 
 the semester. At the outset of the semester, as discussed previously, the program was found to be necessary to implement features such
-as barcode and label generation for easy product tracking in SoFab's lab. This would allow for clear labelling of important hazard 
+as barcode and label generation to enable product tracking in SoFab's lab. This would allow for clear labelling of important hazard 
 information, and significantly improve ease-of-use of the system by allowing users to scan barcodes to find details for items.
 
+The first step in creating the Python application were choosing a existing GUI framework library that would allow Team 3 to quickly 
+build a user-friendly interface. This would ensure that the SoFab team could clearly understand and navigate the application to 
+remove friction from the inventory management process. After conducting research on various frameworks, and discussing within the group
+which frameworks team members were most experienced with, `Tkinter' emerged as the leading candidate. Tkinter's extensive component
+library and community support allowed for near endless customization of the GUI, enabling Team 3 to create an intuitive interface
+fit to the needs of SoFab Inks. 
+
+Next, it was crucial to identify Python libraries that would enable generation of barcode labels and QR codes from a given input string. 
+Team 3 identified the aptly named libraries `barcode' and `qrcode' that enabled this functionality. These libraries output .png files
+of images based on given input strings. With these libraries identified, Team 3 could begin development of the application. A simple
+interface was created allowing users to input basic information about products, including ID, name, date, and volume. 
+
+Additionally, 
+in separate menus, a user could select applicable hazard and precaution warnings to be printed on a label to enhance safety both inside
+the laboratory and for customers receiving products. 
+Once this information 
+was input, a user could then generate the label utilizing the barcode libraries previously mentioned, along with various 
+methods from the `reportlab' library, including `colors' for coloring, `A4' and `landscape' for PDF orientation options, and 
+`canvas' to organize the various components to be included in the label. Images displaying an early iteration of this software can be 
+seen in Figures \ref{fig:early-python1} and \ref{fig:early-python2}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{.45\textwidth}
+        \centering
+        \includegraphics[width=5cm]{"early-python1.png"}
+        \caption{Early Python program home page. User can enter details of an inventory item.}
+        \label{fig:early-python1}
+    \end{subfigure}
+    \begin{subfigure}[b]{.45\textwidth}
+        \centering
+        \includegraphics[width=6cm]{"early-python2.png"}
+        \caption{Inside the `Hazard Details' tab, users can select applicable hazards.}
+        \label{fig:early-python2}
+    \end{subfigure}
+    \caption{}
+    \label{fig:early-python}
+\end{figure}
+\FloatBarrier
+
+At this stage of development, Team 3 had developed much of the desired functionality required by the SoFab team for the label generation
+program. With development time to spare, team members decided to improve upon the software by refactoring the codebase to adhere more 
+closely to the model-view-controller architecture. This move would introduce a class based structure to the application that would 
+enhance code readability, understandability, modularity, and enhance developers ability to modify and improve the code in the future.
+Classes would allow developers to radically reduce the number of global variables in the program.\footnote{Global variables are 
+frowned upon in the developer community, as they can introduce unnecessary complexity to programs.}
+
+Team members worked to deconstruct the existing code into separate categories that represented specific functions of the code. Code 
+that worked with GUI functionality were separated into a separate GUI\footnote{This group represents the `views' group in MVC architecture.},
+while code that handled data models was moved into a data group.\footnote{This group represents the `models' category.} Finally,
+code that required interaction between data models and GUI components would be separated into their own category. \footnote{This
+group is named the `controller' category in MVC architecture.} This restructuring allowed developers to easily navigate the folder tree
+to find code related to the functionality being searched for. This move improved development efficiency, allowing for more swift 
+delivery of features and debugging. An exerpt of this code structure is shown below. 
 
 \begin{lstlisting}[language=Python]
 class App(Tk):
@@ -762,7 +817,52 @@ def generate_checkboxes(self, images=False):
         checkbox.pack(anchor="w", fill="x")
 \end{lstlisting}
 
+With all required functionality implented and development time to spare, Team 3 sought methods to improve the user experience of 
+the Python application and more broadly the inventory management database system. Members tested the system, seeking weak points, or 
+experiences that were less than optimal. One such experience was identified as the experience of inserting items into the 
+Budibase user interface. While the experience itself was not unsatisfactory, the fact that one needed to insert this item into 
+Budibase and, additionally, retrace these steps in the Python application to print a label was found to be less than ideal. For this 
+reason, members searched for methods to accomplish two steps in one by inserting into the PSQL database during label creation. This would 
+provide a smoother experience and save time for the end user.
+
+To accomplish this, this the `psycopg2' library was utilized. This library allows developers to connect to and execute PSQL queries to a 
+database. Exceeding initial expectations, this library also allowed developers to generate dynamic forms in the Tkinter GUI by pulling
+relevant fields necessary for label generation from the database. This simplified the codebase, all the while allowing for the insertion
+of items into the database upon label generation. An extra GUI checkbox was added to allow the user to decline to insert an item into 
+the PSQL database if so desired.
+
+The last major development with regard to the Python program was a full scale GUI redesign utilizing the `CustomTkinter' library. While
+the application contained all required functionality and more, the team thought that the software could benefit from a more 
+user-friendly and intuitive design. Team 3 then got to work redesigning the interface with the discovered CustomTkinter library. This 
+library allowed for simple customization of the GUI that was visually appealing and easy-to-use. Beyond redesigning the GUI for 
+visual appeal, Team 3 added a component that allowed for a live preview of the label to be generated. This allows users to 
+preview how a label would appear if generated at that moment, enhancing the clarity of the program. The results of this redesign can 
+be found below in Figures \ref{fig:late-python1} \ref{fig:late-python2}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=12cm]{"late-python1.png"}
+        \caption{}
+        \label{fig:late-python1}
+    \end{subfigure}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=12cm]{"late-python2.png"}
+        \caption{}
+        \label{fig:late-python2}
+    \end{subfigure}
+    \caption{}
+    \label{fig:late-python}
+\end{figure}
+\FloatBarrier
+
 \subsubsection{Deployment to SoFab Labs}
+The final stage in the development process was the migration and deployment of the software that was developed on the home server 
+described in section \ref{sec:server} to the computer in SoFab's lab. This was a multistep process due to the nature of the project, 
+with two primary deliverables developed through separate methods - the Docker-Compose stack and the Python program. 
+
 
 EAC 1. Identify, formulate, and solve complex engineering problems by 
 applying principles of engineering, science, and mathematics and EAC 2. 

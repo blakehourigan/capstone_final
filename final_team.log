@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  1 DEC 2024 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  2 DEC 2024 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,7 +403,7 @@ nts pre-vi-ously dis-cussed were
 
 [10] [11] [12] [13] [14] [15] [16] [17] [18]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-459.
+460.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -411,12 +411,12 @@ File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 <pictures/postgres_users.png, id=393, 704.6325pt x 286.06876pt>
 File: pictures/postgres_users.png Graphic file (type png)
 <use pictures/postgres_users.png>
-Package pdftex.def Info: pictures/postgres_users.png  used on input line 482.
+Package pdftex.def Info: pictures/postgres_users.png  used on input line 483.
 (pdftex.def)             Requested size: 284.52756pt x 115.51236pt.
 <pictures/postgres_dbs.png, id=394, 1280.785pt x 293.095pt>
 File: pictures/postgres_dbs.png Graphic file (type png)
 <use pictures/postgres_dbs.png>
-Package pdftex.def Info: pictures/postgres_dbs.png  used on input line 488.
+Package pdftex.def Info: pictures/postgres_dbs.png  used on input line 489.
 (pdftex.def)             Requested size: 284.52756pt x 65.10721pt.
 
 
@@ -427,20 +427,20 @@ g (PNG copy)>]
 <pictures/pg_admin.png, id=430, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
-Package pdftex.def Info: pictures/pg_admin.png  used on input line 522.
+Package pdftex.def Info: pictures/pg_admin.png  used on input line 523.
 (pdftex.def)             Requested size: 170.71652pt x 194.6144pt.
 
-Overfull \hbox (15.46758pt too wide) in paragraph at lines 522--523
+Overfull \hbox (15.46758pt too wide) in paragraph at lines 523--524
  [][] 
  []
 
 <pictures/pg_admin2.png, id=431, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
-Package pdftex.def Info: pictures/pg_admin2.png  used on input line 528.
+Package pdftex.def Info: pictures/pg_admin2.png  used on input line 529.
 (pdftex.def)             Requested size: 170.71652pt x 233.72351pt.
 
-Overfull \hbox (15.46758pt too wide) in paragraph at lines 528--529
+Overfull \hbox (15.46758pt too wide) in paragraph at lines 529--530
  [][] 
  []
 
@@ -448,7 +448,7 @@ Overfull \hbox (15.46758pt too wide) in paragraph at lines 528--529
 <pictures/pg_admin_erd.png, id=440, 1969.3575pt x 1587.9325pt>
 File: pictures/pg_admin_erd.png Graphic file (type png)
 <use pictures/pg_admin_erd.png>
-Package pdftex.def Info: pictures/pg_admin_erd.png  used on input line 568.
+Package pdftex.def Info: pictures/pg_admin_erd.png  used on input line 569.
 (pdftex.def)             Requested size: 341.43306pt x 275.29976pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -457,12 +457,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/bb-template1.png, id=461, 1759.57375pt x 1094.0875pt>
 File: pictures/bb-template1.png Graphic file (type png)
 <use pictures/bb-template1.png>
-Package pdftex.def Info: pictures/bb-template1.png  used on input line 617.
+Package pdftex.def Info: pictures/bb-template1.png  used on input line 618.
 (pdftex.def)             Requested size: 284.52756pt x 176.91064pt.
 <pictures/bb-template2.png, id=462, 1430.34375pt x 1079.03125pt>
 File: pictures/bb-template2.png Graphic file (type png)
 <use pictures/bb-template2.png>
-Package pdftex.def Info: pictures/bb-template2.png  used on input line 623.
+Package pdftex.def Info: pictures/bb-template2.png  used on input line 624.
 (pdftex.def)             Requested size: 284.52756pt x 214.63344pt.
 
 
@@ -472,25 +472,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/bb-batches.png, id=470, 1358.07375pt x 576.1525pt>
 File: pictures/bb-batches.png Graphic file (type png)
 <use pictures/bb-batches.png>
-Package pdftex.def Info: pictures/bb-batches.png  used on input line 643.
+Package pdftex.def Info: pictures/bb-batches.png  used on input line 644.
 (pdftex.def)             Requested size: 341.43306pt x 144.84657pt.
  [25 <./pictures/bb-template1.png> <./pictures/bb-template2.png>]
 <pictures/bb-gen-prod.png, id=479, 1347.0325pt x 527.9725pt>
 File: pictures/bb-gen-prod.png Graphic file (type png)
 <use pictures/bb-gen-prod.png>
-Package pdftex.def Info: pictures/bb-gen-prod.png  used on input line 657.
+Package pdftex.def Info: pictures/bb-gen-prod.png  used on input line 658.
 (pdftex.def)             Requested size: 341.43306pt x 133.82155pt.
  [26 <./pictures/bb-batches.png (PNG copy)> <./pictures/bb-gen-prod.png (PNG co
 py)>]
 <pictures/budibase.png, id=487, 2569.6pt x 1168.365pt>
 File: pictures/budibase.png Graphic file (type png)
 <use pictures/budibase.png>
-Package pdftex.def Info: pictures/budibase.png  used on input line 675.
+Package pdftex.def Info: pictures/budibase.png  used on input line 676.
 (pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
 <pictures/bb-orders.png, id=491, 1353.055pt x 774.895pt>
 File: pictures/bb-orders.png Graphic file (type png)
 <use pictures/bb-orders.png>
-Package pdftex.def Info: pictures/bb-orders.png  used on input line 687.
+Package pdftex.def Info: pictures/bb-orders.png  used on input line 688.
 (pdftex.def)             Requested size: 341.43306pt x 195.53233pt.
 
 
@@ -499,48 +499,93 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/budibase3.png, id=492, 2312.64pt x 1179.40625pt>
 File: pictures/budibase3.png Graphic file (type png)
 <use pictures/budibase3.png>
-Package pdftex.def Info: pictures/budibase3.png  used on input line 693.
+Package pdftex.def Info: pictures/budibase3.png  used on input line 694.
 (pdftex.def)             Requested size: 341.43306pt x 174.11388pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27 <./pictures/budibase.png (PNG copy)>] [28 <./pictures/bb-orders.png (PNG co
 py)> <./pictures/budibase3.png (PNG copy)>]
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [29
+Overfull \hbox (1.91725pt too wide) in paragraph at lines 703--705
+[]\OT1/cmr/m/n/10 At this stage of de-vel-op-ment, all re-quired func-tion-al-i
+ty from the user-interface
+ []
 
-] [30]
-Underfull \hbox (badness 6675) in paragraph at lines 790--792
+<pictures/early-python1.png, id=507, 466.74374pt x 630.355pt>
+File: pictures/early-python1.png Graphic file (type png)
+<use pictures/early-python1.png>
+Package pdftex.def Info: pictures/early-python1.png  used on input line 737.
+(pdftex.def)             Requested size: 142.26378pt x 192.12814pt.
+<pictures/early-python2.png, id=508, 807.015pt x 627.34375pt>
+File: pictures/early-python2.png Graphic file (type png)
+<use pictures/early-python2.png>
+Package pdftex.def Info: pictures/early-python2.png  used on input line 743.
+(pdftex.def)             Requested size: 170.71652pt x 132.70332pt.
+
+Overfull \hbox (15.46758pt too wide) in paragraph at lines 743--744
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29
+
+] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) [30 <./pictures/early-python1.png (PNG copy)> <./pictures/early-python2.png (
+PNG copy)>] [31]
+<pictures/late-python1.png, id=578, 1406.25375pt x 766.865pt>
+File: pictures/late-python1.png Graphic file (type png)
+<use pictures/late-python1.png>
+Package pdftex.def Info: pictures/late-python1.png  used on input line 846.
+(pdftex.def)             Requested size: 341.43306pt x 186.18102pt.
+<pictures/late-python2.png, id=579, 442.65375pt x 419.5675pt>
+File: pictures/late-python2.png Graphic file (type png)
+<use pictures/late-python2.png>
+Package pdftex.def Info: pictures/late-python2.png  used on input line 852.
+(pdftex.def)             Requested size: 341.43306pt x 323.64415pt.
+
+
+LaTeX Warning: Float too large for page by 16.82516pt on input line 858.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32] [33 <./pictures/late-python1.png (PNG copy)> <./pictures/late-python2.png 
+(PNG copy)>] [34
+
+]
+Underfull \hbox (badness 6675) in paragraph at lines 900--902
 \OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
 ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 808--811
+Underfull \hbox (badness 3942) in paragraph at lines 918--921
 []\OT1/cmr/m/n/10 Budibase, \OT1/cmr/m/it/10 Docker Com-pose File for Host-ing\
 OT1/cmr/m/n/10 , GitHub Repos-i-tory,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--811
+Underfull \hbox (badness 10000) in paragraph at lines 918--921
 []$\OT1/cmtt/m/n/10 https : / / raw . githubusercontent . com / Budibase / budi
 base / master /
  []
 
-[31] [32] (./final_team.aux)
+[35] [36] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: A38E20ED0A9BF441A9D3CC11EE817E6B;8825.
+(rerunfilecheck)             Checksum: 5132C70FC5DBF934C23D2612FA1C2D5C;8825.
  ) 
 Here is how much of TeX's memory you used:
- 13456 strings out of 476076
- 211747 string characters out of 5793775
+ 13525 strings out of 476076
+ 213596 string characters out of 5793775
  2163187 words of memory out of 5000000
- 35208 multiletter control sequences out of 15000+600000
+ 35267 multiletter control sequences out of 15000+600000
  564647 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,8n,79p,417b,2036s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -558,10 +603,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on final_team.pdf (32 pages, 1267406 bytes).
+Output written on final_team.pdf (36 pages, 1443541 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 616 compressed objects within 7 object streams
- 209 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 746 PDF objects out of 1000 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
