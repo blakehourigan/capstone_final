@@ -863,14 +863,47 @@ The final stage in the development process was the migration and deployment of t
 described in section \ref{sec:server} to the computer in SoFab's lab. This was a multistep process due to the nature of the project, 
 with two primary deliverables developed through separate methods - the Docker-Compose stack and the Python program. 
 
+\paragraph{Installing Docker Software} As described
+previously, all Docker-Compose software data was stored on the SSD drives for this project. This meant that Team 3 could simply 
+transport these disks to transport the data. The other task necessary was to transport the Docker-Compose script which defined the 
+software used, what version, mount locations for the data volumes, etc. This script was loaded onto a USB drive and transported to 
+SoFab's laboratory. Upon arrival at SoFab Inks, the installation process for the software contained within Docker-Compose was a simple 
+process. The detailed process follows below.
 
-EAC 1. Identify, formulate, and solve complex engineering problems by 
-applying principles of engineering, science, and mathematics and EAC 2. 
-Apply engineering design to produce solutions that meet specified needs with 
-consideration of public health, safety, and welfare, as well as global, cultural, 
-social, environmental, and economic factors, and CAC 6. Apply computer 
-science theory and software development fundamentals to produce 
-computing-based solutions) 
+\begin{enumerate}
+    \item \textbf{Installing Docker Desktop} - First, it was necessary to install the Docker Desktop application. This download included 
+        all necessary Docker software including Docker and Docker-Compose. 
+    \item \textbf{Install Windows Subsystem for Linux} - WSL\footnote{Short for Windows Subsystem for Linux.} allows the use of software 
+        written for Linux to run on Windows machines. Docker utilizes WSL to run Docker applications. This helps to ensure cross platform
+        compatibility of software from Linux to Windows and vise versa. 
+    \item \textbf{Transfer the Data} - The drives containing the Docker volume data were installed into the lab machine. Next the 
+        Docker-Compose script was transferred from the USB drive to the windows machine. 
+    \item \textbf{Modify the Docker-Compose Script} - Minor modifications were necessary to the Docker-Compose script to ensure 
+        that the system could find the modified SSD disk paths. 
+    \item \textbf{Start the Containers} - At this stage, the software was installed on the system. The only necessary step was to run the 
+        command to start the containers within the compose script. 
+
+         \begin{lstlisting}[language=yaml]
+        docker-compose up -d
+        \end{lstlisting}
+\end{enumerate}
+
+\paragraph{Installing the Python Program} Installing the developed Python program proved more difficult than the deployment of the 
+Docker-Compose software stack. In principle, the process would be similar to that of the Docker stack. First, the Python code was pulled 
+from the GitHub repo that the team developed in during the semester. The packages used for the development of this project were 
+previously frozen inside a `requirements.txt' file, allowing quick and easy installation of all software versions utilized during 
+development. The program could then be executed from the terminal. However, it was at this stage that a software bug was discovered
+affecting the label generation functionality of the program. The program raised errors regarding access to the PSQL database - which 
+during design was intended to be separate functionality from label generation - that prevented PDF generation from occurring.
+
+This led to a frantic, frustrating, and confusing debugging experience during installation at SoFab's laboratory. Ultimately, this 
+bug went unsolved on installation day, preventing SoFab from using the software as intended until the team's later return to resolve 
+this bug. This experience highlighted the importance of thorough testing that should be conducted prior to installation of a 
+solution on-site. Team 3 plans to continue work on this project until this bug is resolved and the system can be used as expected.
+
+Overall, the installation experience results were mixed. On the one hand, the deployment of the Docker stack was as smooth as possible, 
+while issues were found during the Python transition. Team members found this a valuable learning experience for future projects, 
+with a better understanding of how to prepare for these migrations.
 
 \section{Test/Evaluation Experimental Procedure and Analysis of Results} 
 EAC 6. Develop and conduct appropriate experimentation, analyze and interpret 
