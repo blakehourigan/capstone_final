@@ -497,19 +497,20 @@ the permissions process.
 \subsubsection{PgAdmin4}
 With the database initialized, the team could begin work on constructing a relational database in PSQL\footnote{PSQL stands for PostgreSQL.}
 that modeled the daily workflow in the SoFab Inks lab. However, Team 3 felt that it would be quite inefficient to develop in the 
-PSQL CLI\footnote{CLI stands for Command Line Interface in a computer terminal}. Members felt that it would be difficult to grasp the 
-relations in a database and quickly view the attributes of a database with this interface, especially due to the length of time members
-had gone without working on database systems. Unfamilarity would lead to frustration and confusion through this method of interaction. 
-For this reason members of the team began to seek out away to interact with a database system with a graphical user interface. 
+PSQL CLI\footnote{CLI stands for Command Line Interface in a computer terminal.}. Members felt that it would be difficult to grasp the 
+relations in a database and quickly view the attributes of a database with this interface. This would be especially true due to the 
+length of time members
+had gone without working on database systems. Unfamiliarity would lead to frustration and confusion through this method of interaction. 
+For this reason members of the team began to seek out another way to interact with a database system with a graphical user interface. 
 
 Quickly, members found that there existed a GUI\footnote{Graphical User Interface.} tool build specifically for PSQL called `PgAdmin4'. 
 Best of all, this software was developed by a core member of the PSQL team! PgAdmin4 boasted features such as graphical management of 
-existing attributes including databse schemas, tables, types, trigger functions, and more. This would allow the team to manage the 
+existing attributes including database schemas, tables, types, trigger functions, and more. This would allow the team to manage the 
 database visually in a way that would allow members to quickly and easily learn the tools available at their disposal in PSQL. Additionally,
 this tool allowed for the execution of database queries, giving developers all the power of CLI PSQL in addition to the GUI tools. 
 
-PgAdmin4 was deployed in the projects Docker-Compose script and deployed alongside PSQL. Once deployed, user accounts were created and 
-configured to access the PSQL database as these accounts. At this stage Team 3 could begin constructing the database while avoiding
+PgAdmin4 was deployed in the project's Docker-Compose script and deployed alongside PSQL. Once deployed, user accounts were created and 
+configured to access the PSQL database under these accounts. At this stage Team 3 could begin constructing the database while avoiding
 the overwhelming nature of a CLI tool to interface with the database system. Examples of the deployed instance after the insertion of 
 tables can be found in Figures \ref{fig:pg_admin_tables}, and \ref{fig:pg_admin_queries}. More images can be found on PgAdmin4's webpage.
 \cite{pgadmin-screenshots}
@@ -546,7 +547,7 @@ The general process follows below.
         \textit{static}, or, constantly present, information about this type of item. This item would also contain the \textit{ID}, 
         which would be used to link each row, which represented one item, to related rows in other tables. 
     \item \textbf{Create a Table for Each Life \textit{Stage}} - Next, team members would construct tables that represented a stage in a 
-        product's life. For example, the `Product' inventory may have product table containing the ID of this product, chemicals used to 
+        product's life. For example, the `Product' inventory may have a product table containing the ID of this product, chemicals used to 
         create this product, and in what amount, and other related information. Then, for each stage in a manufacturing process, 
         tables could be generated that would track specific information about actions performed on the item at this step. This was an
         important attribute, as this would give SoFab the ability to easily review the histories of successful batches, and be able to 
@@ -571,7 +572,105 @@ The general process follows below.
 \FloatBarrier
 
 \subsubsection{Budibase}
+\paragraph{Why Budibase?}
+At this stage of development, Team 3 had constructed a functional database system that could store all required information for SoFab 
+Inks' inventory. However, the current interaction system of PgAdmin, while helpful to developers, would be incredibly cumbersome 
+for an end user to use on a daily basis. The methods by which items would be displayed would be confusing and generally unhelpful. For 
+these reasons, it was necessary to add another software solution to the existing stack to enable SoFab Inks to be able to intuitively 
+view the database entries, and better understand their data. The interface, as stated previously, needed to be clean and easy-to-use, 
+free and open-source, and the added touch of a visually appealing system would be appreciated. 
+
+The team began their search into database systems with these constraints in mind. The requirement of a free and open-source system 
+significantly reduced the available solutions for this deliverable, however one solution seemed to check all the required boxes. 
+`Budibase' is a company that produces a database CRUD software that allows users to easily construct clean, simple, visually appealing
+interface software. The company's software functions in a method that is similar to that of website builders `Wix' or `Squarespace'. 
+The software can connect easily to many of the most popular database software solutions on the market, including PSQL. 
+Users have the ability to choose from existing template pages as a starting point and, from there, drag and drop any one of the many 
+available data components into existing pages. These components can connect to any data source existing inside of the connected database
+including tables and, more importantly, queries. Queries allow users to construct custom tables that fit certain criterion in a database,
+and act as a kind of filter to find only data that contains specific values. 
+
+These technical specifications excited Team 3 as they would allow the development of an intuitive system and would provide a 
+straightforward development experience. However, the most important requirement of the selected software were the cost of continued use
+and the open or closed source nature of the project. Luckily, Budibase offers a self-hosted plan which allows users to run the software 
+on a local machine with up to 5 administrative accounts and up to 20 user account completely free-of-charge. Budibase is also open-source,
+and has a rich documentation on the Budibase website \cite{budibase-docs} and on the Budibase YouTube page. \cite{budibase-youtube}
+These pages contain instructions and guidance 
+for how to self-host Budibase, how to connect and use specific database software with Budibase, how to use the various components to 
+build desired interfaces, and more. All of these attributes made Budibase a great option to develop an interface for this project.
+\paragraph{Implmenting Budibase}
+Implementing Budibase into the existing Docker-Compose software stack was a straightforward process. This was mostly due to Budibase's 
+provided documentation and existing Budibase Docker-Compose script. This script provided an excellent baseline to integrate into the 
+stack, modify slightly, and deploy onto the home server. Once deployed, Team 3 members were given user accounts and access to the 
+platform. Team members then worked to connect the existing PSQL database into the Budibase frontend by entering the Docker IP 
+address, PSQL port number, and user credentials. At this stage users could begin developing web pages that interacted with existing 
+data in the database, or insert forms that would allow users to insert data into database tables.
+
+Team 3 searched available Budibase templates, eventually locating a template titled `Manufacturing inventory app'. This template was 
+perfect for this project scenario, and was selected and implemented into the self-hosted local instance of Budibase. Images of the 
+template as found are shown in Figure \ref{fig:bb_templates}.
+
 \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=10cm]{"bb-template1.png"}
+        \caption{Insert new product template.}
+        \label{fig:bb_temp1}
+    \end{subfigure}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=10cm]{"bb-template2.png"}
+        \caption{View database table template.}
+        \label{fig:bb_temp2}
+    \end{subfigure}
+    \caption{The `Manufacturing Inventory App' Budibase Template provided an excellent starting point for development.}
+    \label{fig:bb_templates}
+\end{figure}
+\FloatBarrier
+
+Once this template had been downloaded onto the local instance successfully, Team 3 could modify and customize it to fit the needs of
+SoFab Inks. This would require replacement of all data sources with those found on the local PSQL server instance, as well as updating
+components and adding new pages to Budibase. This process began by implementing the `Product Inventory' page, which displays
+SoFab products at their current stage in the manufacturing process. The process includes multiple stages, and each product is 
+displayed at the stage it is in. upon clicking a product, more details for the product are displayed. This page will also allow SoFab 
+team members to view the remaining amount available of products, as well as allowing users to modify the remaining value as more is 
+used or purchased. Products may also be searched on this page by ID to find the exact product a user is looking for.
+An image of the current state of this page is shown in figure \ref{fig:bb_batches}
+\begin{figure}[h]
+\centering
+    \centering
+    \includegraphics[width=12cm]{"bb-batches.png"}
+    \caption{Budibase products page.}
+    \label{fig:bb_batches}
+\end{figure}
+\FloatBarrier
+
+Following this implementation, similar pages were implemented for the other main types of inventory: general and chemical inventory. 
+The process of developing these pages was very similar to the previous steps, however, and extra field was added: search by name. For 
+these products, one may need to search by the name of a chemical or a specific product. Therefore, this feature was also included for these
+pages. An example of these pages is shown in Figure \ref{fig:bb_gen_prod}.
+
+\begin{figure}[h]
+\centering
+    \centering
+    \includegraphics[width=12cm]{"bb-gen-prod.png"}
+    \caption{Budibase general products page.}
+    \label{fig:bb_gen_prod}
+\end{figure}
+\FloatBarrier
+
+At this stage of development, many of SoFab's requirements had been implemented into the database and the user-interface. However, in 
+order to search a product in the front end, a user was required to navigate to that page and enter the ID for that \textit{type} of 
+item. This is because, in an effort to easily differentiate the different types of products, each of the three primary types of 
+inventory items held barcode IDs with different three letter prefixes. 
+
+To make this experience more user-friendly, Team 3 developed a new 
+home page for the Budibase front end which contained three simple components: a heading, a search box, and a QR code scanning component
+for mobile devices. This new home page would simplify the search experience, allowing users to find details about any product in the 
+entire inventory. The result of these efforts is shown in Figure \ref{fig:budibase_home}.
+
+ \begin{figure}[h!]
     \centering
     \includegraphics[width=12cm]{"budibase.png"}
     \caption{Budibase home page. Global search that searches all types of inventory via QR code or direct ID entry.}
@@ -579,9 +678,9 @@ The general process follows below.
 \end{figure}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=12cm]{"budibase2.png"}
-    \caption{Budibase general inventory page. Keep track of general lab items.}
-    \label{fig:budibase_gen_inv}
+    \includegraphics[width=12cm]{"bb-orders.png"}
+    \caption{Budibase orders. Users may keep track of products ordered from this page.}
+    \label{fig:bb-orders}
 \end{figure}
 \begin{figure}[h!]
     \centering
