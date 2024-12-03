@@ -40,11 +40,8 @@
 \contentsline {section}{References}{43}{section*.23}%
 \contentsline {section}{Appendices}{44}{section*.24}%
 \contentsline {section}{\numberline {A}Customer Contact Information}{44}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{44}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{44}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{44}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{44}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{44}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{44}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{44}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{44}{appendix.I}%
+\contentsline {subsection}{\numberline {A.1}SoFab Company Information}{44}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}SoFab Representative Information}{44}{subsection.A.2}%
+\contentsline {section}{\numberline {B}Additional Drawings and Diagrams}{44}{appendix.B}%
+\contentsline {section}{\numberline {C}Source Code}{44}{appendix.C}%
+\contentsline {section}{\numberline {D}Software Installation Instructions}{44}{appendix.D}%

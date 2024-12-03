@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.2)  3 DEC 2024 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.2)  3 DEC 2024 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,12 +402,12 @@ nts pre-vi-ously dis-cussed were
  []
 
 [10] [11]
-<pictures/sys_diagram2.png, id=319, 260.47313pt x 210.7875pt>
+<pictures/sys_diagram2.png, id=329, 260.47313pt x 210.7875pt>
 File: pictures/sys_diagram2.png Graphic file (type png)
 <use pictures/sys_diagram2.png>
 Package pdftex.def Info: pictures/sys_diagram2.png  used on input line 259.
 (pdftex.def)             Requested size: 172.5pt x 139.59619pt.
-<pictures/hardware_diagram.png, id=322, 1669.23625pt x 1257.69875pt>
+<pictures/hardware_diagram.png, id=332, 1669.23625pt x 1257.69875pt>
 File: pictures/hardware_diagram.png Graphic file (type png)
 <use pictures/hardware_diagram.png>
 Package pdftex.def Info: pictures/hardware_diagram.png  used on input line 273.
@@ -418,7 +418,7 @@ Package pdftex.def Info: pictures/hardware_diagram.png  used on input line 273.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./pictures/sys_diagram2.png>]
-<pictures/database_sys_diagram.png, id=333, 1383.1675pt x 1283.79625pt>
+<pictures/database_sys_diagram.png, id=343, 1383.1675pt x 1283.79625pt>
 File: pictures/database_sys_diagram.png Graphic file (type png)
 <use pictures/database_sys_diagram.png>
 Package pdftex.def Info: pictures/database_sys_diagram.png  used on input line 
@@ -429,12 +429,12 @@ Package pdftex.def Info: pictures/database_sys_diagram.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13 <./pictures/hardware_diagram.png>]
-<pictures/bb_diagram2.png, id=343, 431.11063pt x 221.82875pt>
+<pictures/bb_diagram2.png, id=353, 431.11063pt x 221.82875pt>
 File: pictures/bb_diagram2.png Graphic file (type png)
 <use pictures/bb_diagram2.png>
 Package pdftex.def Info: pictures/bb_diagram2.png  used on input line 311.
 (pdftex.def)             Requested size: 172.5pt x 88.75699pt.
-<pictures/python_app_sys.png, id=345, 242.40562pt x 276.28218pt>
+<pictures/python_app_sys.png, id=355, 242.40562pt x 276.28218pt>
 File: pictures/python_app_sys.png Graphic file (type png)
 <use pictures/python_app_sys.png>
 Package pdftex.def Info: pictures/python_app_sys.png  used on input line 325.
@@ -451,12 +451,12 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<pictures/postgres_users.png, id=428, 704.6325pt x 286.06876pt>
+<pictures/postgres_users.png, id=439, 704.6325pt x 286.06876pt>
 File: pictures/postgres_users.png Graphic file (type png)
 <use pictures/postgres_users.png>
 Package pdftex.def Info: pictures/postgres_users.png  used on input line 547.
 (pdftex.def)             Requested size: 284.52756pt x 115.51236pt.
-<pictures/postgres_dbs.png, id=429, 1280.785pt x 293.095pt>
+<pictures/postgres_dbs.png, id=440, 1280.785pt x 293.095pt>
 File: pictures/postgres_dbs.png Graphic file (type png)
 <use pictures/postgres_dbs.png>
 Package pdftex.def Info: pictures/postgres_dbs.png  used on input line 553.
@@ -467,7 +467,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22] [23 <./pictures/postgres_users.png (PNG copy)> <./pictures/postgres_dbs.pn
 g (PNG copy)>]
-<pictures/pg_admin.png, id=470, 1082.0425pt x 1233.60875pt>
+<pictures/pg_admin.png, id=480, 1082.0425pt x 1233.60875pt>
 File: pictures/pg_admin.png Graphic file (type png)
 <use pictures/pg_admin.png>
 Package pdftex.def Info: pictures/pg_admin.png  used on input line 587.
@@ -477,7 +477,7 @@ Overfull \hbox (15.46758pt too wide) in paragraph at lines 587--588
  [][] 
  []
 
-<pictures/pg_admin2.png, id=471, 739.76375pt x 1012.78375pt>
+<pictures/pg_admin2.png, id=481, 739.76375pt x 1012.78375pt>
 File: pictures/pg_admin2.png Graphic file (type png)
 <use pictures/pg_admin2.png>
 Package pdftex.def Info: pictures/pg_admin2.png  used on input line 593.
@@ -488,7 +488,7 @@ Overfull \hbox (15.46758pt too wide) in paragraph at lines 593--594
  []
 
 [24 <./pictures/pg_admin.png (PNG copy)> <./pictures/pg_admin2.png (PNG copy)>]
-<pictures/pg_admin_erd.png, id=480, 1969.3575pt x 1587.9325pt>
+<pictures/pg_admin_erd.png, id=490, 1969.3575pt x 1587.9325pt>
 File: pictures/pg_admin_erd.png Graphic file (type png)
 <use pictures/pg_admin_erd.png>
 Package pdftex.def Info: pictures/pg_admin_erd.png  used on input line 633.
@@ -497,12 +497,12 @@ Package pdftex.def Info: pictures/pg_admin_erd.png  used on input line 633.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25] [26 <./pictures/pg_admin_erd.png>]
-<pictures/bb-template1.png, id=500, 1759.57375pt x 1094.0875pt>
+<pictures/bb-template1.png, id=510, 1759.57375pt x 1094.0875pt>
 File: pictures/bb-template1.png Graphic file (type png)
 <use pictures/bb-template1.png>
 Package pdftex.def Info: pictures/bb-template1.png  used on input line 682.
 (pdftex.def)             Requested size: 284.52756pt x 176.91064pt.
-<pictures/bb-template2.png, id=501, 1430.34375pt x 1079.03125pt>
+<pictures/bb-template2.png, id=511, 1430.34375pt x 1079.03125pt>
 File: pictures/bb-template2.png Graphic file (type png)
 <use pictures/bb-template2.png>
 Package pdftex.def Info: pictures/bb-template2.png  used on input line 688.
@@ -512,25 +512,25 @@ Package pdftex.def Info: pictures/bb-template2.png  used on input line 688.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27]
-<pictures/bb-batches.png, id=509, 1358.07375pt x 576.1525pt>
+<pictures/bb-batches.png, id=519, 1358.07375pt x 576.1525pt>
 File: pictures/bb-batches.png Graphic file (type png)
 <use pictures/bb-batches.png>
 Package pdftex.def Info: pictures/bb-batches.png  used on input line 708.
 (pdftex.def)             Requested size: 341.43306pt x 144.84657pt.
  [28 <./pictures/bb-template1.png> <./pictures/bb-template2.png>]
-<pictures/bb-gen-prod.png, id=517, 1347.0325pt x 527.9725pt>
+<pictures/bb-gen-prod.png, id=527, 1347.0325pt x 527.9725pt>
 File: pictures/bb-gen-prod.png Graphic file (type png)
 <use pictures/bb-gen-prod.png>
 Package pdftex.def Info: pictures/bb-gen-prod.png  used on input line 722.
 (pdftex.def)             Requested size: 341.43306pt x 133.82155pt.
  [29 <./pictures/bb-batches.png (PNG copy)> <./pictures/bb-gen-prod.png (PNG co
 py)>]
-<pictures/budibase.png, id=525, 2569.6pt x 1168.365pt>
+<pictures/budibase.png, id=535, 2569.6pt x 1168.365pt>
 File: pictures/budibase.png Graphic file (type png)
 <use pictures/budibase.png>
 Package pdftex.def Info: pictures/budibase.png  used on input line 740.
 (pdftex.def)             Requested size: 341.43306pt x 155.2444pt.
-<pictures/bb-orders.png, id=529, 1353.055pt x 774.895pt>
+<pictures/bb-orders.png, id=539, 1353.055pt x 774.895pt>
 File: pictures/bb-orders.png Graphic file (type png)
 <use pictures/bb-orders.png>
 Package pdftex.def Info: pictures/bb-orders.png  used on input line 752.
@@ -539,7 +539,7 @@ Package pdftex.def Info: pictures/bb-orders.png  used on input line 752.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/budibase3.png, id=530, 2312.64pt x 1179.40625pt>
+<pictures/budibase3.png, id=540, 2312.64pt x 1179.40625pt>
 File: pictures/budibase3.png Graphic file (type png)
 <use pictures/budibase3.png>
 Package pdftex.def Info: pictures/budibase3.png  used on input line 758.
@@ -554,12 +554,12 @@ Overfull \hbox (1.91725pt too wide) in paragraph at lines 767--769
 ty from the user-interface
  []
 
-<pictures/early-python1.png, id=546, 466.74374pt x 630.355pt>
+<pictures/early-python1.png, id=556, 466.74374pt x 630.355pt>
 File: pictures/early-python1.png Graphic file (type png)
 <use pictures/early-python1.png>
 Package pdftex.def Info: pictures/early-python1.png  used on input line 801.
 (pdftex.def)             Requested size: 142.26378pt x 192.12814pt.
-<pictures/early-python2.png, id=547, 807.015pt x 627.34375pt>
+<pictures/early-python2.png, id=557, 807.015pt x 627.34375pt>
 File: pictures/early-python2.png Graphic file (type png)
 <use pictures/early-python2.png>
 Package pdftex.def Info: pictures/early-python2.png  used on input line 807.
@@ -578,12 +578,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) [33 <./pictures/early-python1.png (PNG copy)> <./pictures/early-python2.png (
 PNG copy)>] [34]
-<pictures/late-python1.png, id=616, 1406.25375pt x 766.865pt>
+<pictures/late-python1.png, id=626, 1406.25375pt x 766.865pt>
 File: pictures/late-python1.png Graphic file (type png)
 <use pictures/late-python1.png>
 Package pdftex.def Info: pictures/late-python1.png  used on input line 910.
 (pdftex.def)             Requested size: 341.43306pt x 186.18102pt.
-<pictures/late-python2.png, id=617, 442.65375pt x 419.5675pt>
+<pictures/late-python2.png, id=627, 442.65375pt x 419.5675pt>
 File: pictures/late-python2.png Graphic file (type png)
 <use pictures/late-python2.png>
 Package pdftex.def Info: pictures/late-python2.png  used on input line 916.
@@ -599,12 +599,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (PNG copy)>] [37
 
 ] [38]
-<pictures/latex-label.png, id=654, 361.35pt x 255.95625pt>
+<pictures/latex-label.png, id=664, 361.35pt x 255.95625pt>
 File: pictures/latex-label.png Graphic file (type png)
 <use pictures/latex-label.png>
 Package pdftex.def Info: pictures/latex-label.png  used on input line 995.
 (pdftex.def)             Requested size: 227.62204pt x 161.23375pt.
-<pictures/python-label.png, id=655, 221.32687pt x 159.59625pt>
+<pictures/python-label.png, id=665, 221.32687pt x 159.59625pt>
 File: pictures/python-label.png Graphic file (type png)
 <use pictures/python-label.png>
 Package pdftex.def Info: pictures/python-label.png  used on input line 1000.
@@ -635,35 +635,62 @@ base / master /
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: A025F86C9103A98BF036F7EB0CDCC48A;8825.
+
+
+Package rerunfilecheck Warning: File `final_team.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `final_team.out':
+(rerunfilecheck)             Before: 0B49FEE94A3788C368E98E255F029257;9240
+(rerunfilecheck)             After:  9AB898E2B887D867F1B0ACBF5B2D0716;8410.
  ) 
 Here is how much of TeX's memory you used:
- 13635 strings out of 476076
- 216372 string characters out of 5793775
+ 13639 strings out of 476076
+ 216432 string characters out of 5793775
  2163187 words of memory out of 5000000
- 35347 multiletter control sequences out of 15000+600000
+ 35349 multiletter control sequences out of 15000+600000
  564647 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,8n,79p,417b,2036s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on final_team.pdf (44 pages, 1725661 bytes).
+
+pdfTeX warning (dest): name{appendix.I} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{appendix.H} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{appendix.G} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{appendix.F} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{appendix.E} has been referenced but does not exist,
+ replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on final_team.pdf (44 pages, 1726505 bytes).
 PDF statistics:
- 831 PDF objects out of 1000 (max. 8388607)
- 710 compressed objects within 8 object streams
- 249 named destinations out of 1000 (max. 500000)
- 484 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 845 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
+ 251 named destinations out of 1000 (max. 500000)
+ 500 words of extra memory for PDF output out of 10000 (max. 10000000)
 
