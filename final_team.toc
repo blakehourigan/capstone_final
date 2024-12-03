@@ -8,43 +8,43 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Selecting an Interface}{8}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}A Language for Custom Software}{9}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Final Specifications}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}System Diagrams}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}System Diagrams}{11}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Hardware Overview Diagram}{12}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{12}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{12}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Economic Constraints}{12}{subsubsection.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.7.2}Technical Constraints}{13}{subsubsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.3}Time Constraints}{14}{subsubsection.2.7.3}%
-\contentsline {section}{\numberline {3}Detailed Implementation}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{15}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}A Home for A Database}{15}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}A Barcode Scanning Interface}{15}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{16}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}A Home Development Server}{16}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Docker-Compose}{17}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}PostgreSQL}{19}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{20}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Budibase}{23}{subsubsection.3.2.5}%
-\contentsline {paragraph}{Why Budibase?}{23}{section*.5}%
-\contentsline {paragraph}{Implementing Budibase}{24}{section*.6}%
-\contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{29}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}Deployment to SoFab Labs}{34}{subsubsection.3.2.7}%
-\contentsline {paragraph}{Installing Docker Software}{34}{section*.15}%
-\contentsline {paragraph}{Installing the Python Program}{34}{section*.16}%
-\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{35}{section.4}%
-\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{35}{section.5}%
-\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{36}{section.6}%
-\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{36}{section.7}%
-\contentsline {section}{\numberline {8}Conclusions}{36}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{36}{section.9}%
-\contentsline {section}{References}{37}{section*.17}%
-\contentsline {section}{Appendices}{38}{section*.18}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{38}{appendix.A}%
-\contentsline {section}{\numberline {B}Data Sheets}{38}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{38}{appendix.C}%
-\contentsline {section}{\numberline {D}Source Code}{38}{appendix.D}%
-\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{38}{appendix.E}%
-\contentsline {section}{\numberline {F}Software Installation Instructions}{38}{appendix.F}%
-\contentsline {section}{\numberline {G}User Manual}{38}{appendix.G}%
-\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{38}{appendix.H}%
-\contentsline {section}{\numberline {I}White Papers}{38}{appendix.I}%
+\contentsline {subsection}{\numberline {2.6}Software Overview Diagram}{13}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Economical, Technical, and Time Constraints}{15}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Economic Constraints}{15}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Technical Constraints}{16}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Time Constraints}{17}{subsubsection.2.7.3}%
+\contentsline {section}{\numberline {3}Detailed Implementation}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Hardware Detailed Implementation}{18}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}A Home for A Database}{18}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}A Barcode Scanning Interface}{19}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Software Detailed Implementation}{19}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}A Home Development Server}{19}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Docker-Compose}{20}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}PostgreSQL}{22}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}PgAdmin4}{23}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Budibase}{26}{subsubsection.3.2.5}%
+\contentsline {paragraph}{Why Budibase?}{26}{section*.10}%
+\contentsline {paragraph}{Implementing Budibase}{27}{section*.11}%
+\contentsline {subsubsection}{\numberline {3.2.6}Python Database Insertion\slash Label Generation}{32}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}Deployment to SoFab Labs}{37}{subsubsection.3.2.7}%
+\contentsline {paragraph}{Installing Docker Software}{37}{section*.20}%
+\contentsline {paragraph}{Installing the Python Program}{37}{section*.21}%
+\contentsline {section}{\numberline {4}Test/Evaluation Experimental Procedure and Analysis of Results}{38}{section.4}%
+\contentsline {section}{\numberline {5}Societal Impact of Project\slash Legal and Ethical Considerations}{38}{section.5}%
+\contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{40}{section.6}%
+\contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{40}{section.7}%
+\contentsline {section}{\numberline {8}Conclusions}{41}{section.8}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{41}{section.9}%
+\contentsline {section}{References}{42}{section*.22}%
+\contentsline {section}{Appendices}{43}{section*.23}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{43}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sheets}{43}{appendix.B}%
+\contentsline {section}{\numberline {C}Additional Drawings and Diagrams}{43}{appendix.C}%
+\contentsline {section}{\numberline {D}Source Code}{43}{appendix.D}%
+\contentsline {section}{\numberline {E}Experimental and/or Simulation Test Results}{43}{appendix.E}%
+\contentsline {section}{\numberline {F}Software Installation Instructions}{43}{appendix.F}%
+\contentsline {section}{\numberline {G}User Manual}{43}{appendix.G}%
+\contentsline {section}{\numberline {H}Quotes, Including Ordering Information}{43}{appendix.H}%
+\contentsline {section}{\numberline {I}White Papers}{43}{appendix.I}%

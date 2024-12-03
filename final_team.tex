@@ -58,7 +58,6 @@ To accomplish this, the team employed various existing software solutions, inclu
 for Create, Read, Update, Delete.} user interface software, and solutions to containerize this software together into one package. The 
 team also developed custom software to provide features not available in the existing software solutions. 
 
-CAC 3. Communicate effectively in a variety of professional contexts 
 
 \section{System Description}
 The following sections describe the specifications that were formulated as a result of communication between Team 3 and the SoFab Inks
@@ -240,29 +239,94 @@ For these reasons the following selections were made final as software solutions
     \item \textbf{User-Interface\slash CRUD Frontend} - Budibase
     \item \textbf{Programming Language for Custom Software} - Python
 \end{itemize}
-(finalized internal design document) 
-    EAC 1. Identify, formulate, and solve complex engineering problems by 
-    applying principles of engineering, science, and mathematics and CAC 1. 
-    Analyze a complex computing problem and to apply principles of computing 
-    and other relevant disciplines to identify solutions and CAC 6. Apply 
-    computer science theory and software development fundamentals to produce 
-    computing-based solutions) 
-
 \subsection{System Diagrams} 
-Detail all interfaces between the environment and the components 
-    EAC 2. Apply engineering design to produce solutions that meet specified 
-    needs with consideration of public health, safety, and welfare, as well as 
-    global, cultural, social, environmental, and economic factors) 
+Once specifications were made, it was important to visualize processes for each system.  
 
+Through diagrams, Team 3 was able to define key components and interactions prior to implementation.  The systemm, shown in 
+Figure \ref{fig:sys_diagram} consists of three main components: the Frontend, Middleware, and Backend (Database). 
+
+\begin{enumerate} 
+    \item \textbf{Frontend (Budibase)} - The user interacts with a web-based interface, with options to create, remove, and edit.  
+    This interface allows users to request data, view reports, and generate PDFs.  
+    \item \textbf{Python Program} - The Python program allows for interactions with the PostgreSQL database; 
+    allowing users to fetch or manipulate data, and generates PDF label documents based on the data.  
+    \item \textbf{Backend (PostgreSQL)} - The PostgreSQL database represents the data storage layer, containing all data for 
+        the system.  
+    It's referenced across all system components, whether for display in Budibase or for generating label PDFs on the python program. 
+
+     \begin{figure}[h]
+        \centering 
+        \includegraphics[width=0.5\linewidth]{pictures/sys_diagram2.png} 
+        \caption{Overview of frontend, backend, and middleware interactions.} 
+        \label{fig:sys_diagram} 
+    \end{figure} 
+        \FloatBarrier
+\end{enumerate} 
 \subsection{Hardware Overview Diagram} 
-CAC 2. Design, implement, and evaluate a 
-    computing-based solution to meet a given set of computing requirements in 
-    the context of the program’s discipline) 
+Hardware architecture \ref{fig:hardware} includes a desktop hosting the PostgreSQL database, which serves as the central data 
+repository. To access this repository, web-based interface \textit{pgAdmin} in addition to vpn-service \textit{Tailscale} where 
+remote connections were established. Both of these methods allowing team members to connect from their laptops securely and 
+manage the database from different locations. 
+
+\begin{figure}[h]
+    \centering 
+    \includegraphics[width=1\linewidth]{pictures/hardware_diagram.png} 
+    \caption{Hardware components and their connections} 
+    \label{fig:hardware} 
+\end{figure} 
+\FloatBarrier
 
 \subsection{Software Overview Diagram} 
-CAC 2. Design, implement, and evaluate a 
-    computing-based solution to meet a given set of computing requirements in the 
-    context of the program’s discipline) 
+A diagram was needed to show interactions between software. Budibase and the custom Python application both integrate with pgAdmin,  
+which serves as the interface for managing the PostgreSQL database.  
+\begin{enumerate} 
+    \item \textbf{PostgreSQL Database Integration} -  
+    The following diagram \ref{fig:database_diagram} represents early design stages of the PostgreSQL database.  
+    The diagram focuses on the key tables involved in the company’s batch process,  
+    representing a streamlined version of the entire database architecture. 
+    The core table for the batch process is ‘Batch Inventory’, which holds fields such as 
+        \textit{ID} (which is used as a unique identifier across all tables),  
+    hazard information, and other critical fields. 
+
+    \begin{figure}[h!] 
+        \centering 
+        \begin{subfigure}[b]{\textwidth} 
+        \centering 
+        \includegraphics[width=7cm]{"database_sys_diagram.png"} 
+        \caption{Batch Process Info Tracking Tables} 
+        \label{fig:database_diagram} 
+        \end{subfigure} 
+    \end{figure} 
+        \FloatBarrier
+
+    \item \textbf{User Interface for Database Interaction  \textit{(Budibase)}} - First step involves user login to the web interface 
+    On successful login, the user is directed to the Home Screen, allowing for product search through ID.  
+    Based on the Product ID entered, the system will determine the next screen based on the product's type in the inventory database.  
+    The product type directs the flow to  
+    \textit{General Inventory}, \textit{Chemical Inventory}, or \textit{Product Inventory}. 
+    Additional screens include order, customers, and analytics. The following diagram \ref{fig:bb_software_diagram}  
+    visualizes this process 
+        \begin{figure}[h]
+        \centering 
+        \includegraphics[width=0.5\linewidth]{pictures/bb_diagram2.png} 
+            \caption{Structure of web interface (\textit{Budibase})} 
+        \label{fig:bb_software_diagram} 
+    \end{figure} 
+    \FloatBarrier
+
+    \item \textbf{Python Application for \textit{Chemical Data Entry}} - The flow begins with the user launching the program, which 
+        prompts them to choose from one of three inventory types. After selecting the appropriate type, the user enters the 
+        relevant chemical information. The application then generates a unique product ID for the item and, finally, adds the 
+        entered data to the database for storage and future reference. Each step in the process is clearly mapped to ensure 
+        efficient data handling and accurate inventory management (Figure \ref{fig:appsysdiagram}).  
+
+    \begin{figure}[h!] 
+         \centering 
+         \includegraphics[width=10cm]{"python_app_sys.png"} 
+         \caption{Adding user entries to inventory tables in PSQL} 
+         \label{fig:appsysdiagram} 
+     \end{figure} 
+\end{enumerate} 
 
 \subsection{Economical, Technical, and Time Constraints}
 Over the course of this project, several constraints were imposed and revealed to Team 3 that limited the available tools for this 
@@ -344,9 +408,9 @@ inventory, a database system was required. Once this was decided, the main point
 safely as possible. Team 3 wanted to ensure with certainty that SoFabs sensitive and irreplaceable company data would be both secure 
 and redundant to a avoid a catastrophic data loss scenario. This requirement however was not without mild cost. 
 
-The security of the database was a matter for the software implementation, however, redundancy required multiple storage locations to 
-to ensure multiple independent copies of the database are available at any given time. For this reason Team 3 decided to purchase 2 
-1 Terabyte solid-state storage drives, intended to each contain separate copies of the database. One of these disks would contain the 
+The security of the database was primarily a matter for the software implementation, however, redundancy required multiple storage locations
+to ensure multiple independent copies of the database are available at any given time. For this reason Team 3 decided to purchase two 
+1 terabyte solid-state storage drives, intended to each contain separate copies of the database. One of these disks would contain the 
 current working version of the database at all times, while the other drive would contain backups that would be conducted on a daily 
 basis. The team could even write a script in such a way to keep record of each backup instead of overwriting the backup each day with the 
 new copy. This would allow the team to inspect the database at any given point in its history if required. 
@@ -648,7 +712,7 @@ An image of the current state of this page is shown in figure \ref{fig:bb_batche
 \FloatBarrier
 
 Following this implementation, similar pages were implemented for the other main types of inventory: general and chemical inventory. 
-The process of developing these pages was very similar to the previous steps, however, and extra field was added: search by name. For 
+The process of developing these pages was very similar to the previous steps, however, an extra field was added: search by name. For 
 these products, one may need to search by the name of a chemical or a specific product. Therefore, this feature was also included for these
 pages. An example of these pages is shown in Figure \ref{fig:bb_gen_prod}.
 
@@ -664,7 +728,7 @@ pages. An example of these pages is shown in Figure \ref{fig:bb_gen_prod}.
 At this stage of development, many of SoFab's requirements had been implemented into the database and the user-interface. However, in 
 order to search a product in the front end, a user was required to navigate to that page and enter the ID for that \textit{type} of 
 item. This is because, in an effort to easily differentiate the different types of products, each of the three primary types of 
-inventory items held barcode IDs with different three letter prefixes. 
+inventory items held barcode IDs with different two letter prefixes. 
 
 To make this experience more user-friendly, Team 3 developed a new 
 home page for the Budibase front end which contained three simple components: a heading, a search box, and a QR code scanning component
@@ -709,7 +773,7 @@ the semester. At the outset of the semester, as discussed previously, the progra
 as barcode and label generation to enable product tracking in SoFab's lab. This would allow for clear labelling of important hazard 
 information, and significantly improve ease-of-use of the system by allowing users to scan barcodes to find details for items.
 
-The first step in creating the Python application were choosing a existing GUI framework library that would allow Team 3 to quickly 
+The first step in creating the Python application was choosing a existing GUI framework library that would allow Team 3 to quickly 
 build a user-friendly interface. This would ensure that the SoFab team could clearly understand and navigate the application to 
 remove friction from the inventory management process. After conducting research on various frameworks, and discussing within the group
 which frameworks team members were most experienced with, `Tkinter' emerged as the leading candidate. Tkinter's extensive component
@@ -910,23 +974,72 @@ EAC 6. Develop and conduct appropriate experimentation, analyze and interpret
 data, and use engineering judgment to draw conclusions) 
 
 \section{Societal Impact of Project\slash Legal and Ethical Considerations} 
-include legal and ethical considerations 
+Due to the nature of SoFab Ink’s work, it was necessary for the team to take the company’s privacy and legal trademarks into account, as 
+well as prioritize the safety and legal efficacy of the labels we were producing. The team focused on three primary standards during 
+the development process, protection of intellectual property, compliance with regulatory requirements, and data security 
+and protection. 
 
-CAC 4. Recognize professional responsibilities and make informed judgments in 
-computing practice based on legal and ethical principles) 
+To prioritize the Intellectual property protections of the startup, the entire team, in addition to signing NDAs to protect the 
+chemical companies' formulas, worked exclusively with dummy data. This ensured that in the process of sharing code and access to our 
+temporary databases, any leaks of information would have no negative effects on the company. During on-site installation of equipment 
+and meetings with the team, there was also a restriction on photography and the amount of data the team was able to access.  
+
+The team also worked to comply with regulatory standards and ensure that the labels being produced with our software would 
+include information required by OSHA to ensure safety and legal requirements for the company. The label generator separates 
+inventory into three categories, general, chemical, and product (batch). For any type of inventory involving chemicals (chemical 
+and product,) there are easy to access dropdown tabs where a user can select the relevant Hazard type, Precaution type, and hazardous 
+material warnings to be displayed on the label. The team also ensured that relevant documentation was created in order to allow the 
+company to make any necessary changes to the default warnings and hazards, as well as add new ones if regulations were to change in 
+the future. 
+
+To ensure that the company’s data would be sufficiently protected, the entire database is hosted on a local network inside their 
+lab, without any outside internet access. The only way to access this database is to be physically present in order to connect to 
+the local network, and have a working username and password.  In addition, all the data is hosted on a separate SSD, with a second 
+drive serving solely as a backup in case of failure. The database was written in PostgreSQL, which is a language that has frequent 
+save-states and is also capable of data recovery, in the case of corruption. The decision to use PostgreSQL was made primarily 
+because of this data recovery feature, as losing access to their inventory database would have significant negative impacts for the 
+company. 
+
+These standards were chosen as primary targets for the team, in order to ensure the longevity of the project. The team was aware 
+that they would only be able to work on this project for the duration of the semester, which meant that any additional changes 
+would need to be made by SoFab employees. The team also wanted to make a product that could be used by the company for an extended 
+duration of time, as it was unknown when the startup might have the funds to hire a team to professionally rework their entire 
+database.
 
 \section{Contribution of Project to Society\slash Expected Effects}
-CAC 4. Recognize professional responsibilities and make informed judgments in 
-computing practice based on legal and ethical principles) 
+The goal of this project was to create a system for this local startup to use to efficiently track their product and internal 
+inventory. Through their work with SoFab Inks, the team hopes to be able to aid in their work in the renewable energy sector. 
 
+SoFab Inks primarily produces inks that can be used in place of the charge transport layer of a solar panel. This replacement can 
+work to make the production of panels cheaper, as well as the rate of energy production more efficient.  
+
+During meetings with the company, SoFab emphasized wanting the ability to be able to find specific batches that their customers 
+said were especially effective, and see what made them different. By streamlining their inventory system, the team has given them 
+the ability to track orders more efficiently, as well as go back to past orders and view what exact steps were taken in order to 
+make a batch of inventory better than prior batches. The team has also implemented a comprehensive analytics system on what the 
+company deems were its most important metrics, as well as documentation on how to generate more analytics on their data. The team 
+hopes that this work will contribute to the efficiency and cost-effectiveness of the solar panel industry.  
 \section{Engineering Standards, Constraints, and Security}
-EAC 1. Apply engineering design to produce solutions that meet specified needs with consideration of public health, 
-safety, and welfare, as well as global, cultural, social, environmental, and economic 
-factors) 
+When creating software for SoFab Inks, the team had to frequently consider the technical ability of the software's users. During 
+meetings with the company, SoFab employees repeatedly emphasized the ease of access and flexibility that they needed, as well as the 
+need for thorough documentation. In addition, as a startup, the company did not have the funds available for a subscription to an 
+expensive service or software. This meant that the team would need to use open source and free resources, as well as build any 
+additional features themselves. 
+
+These considerations are what led the team to use `BudiBase' an open-source front end database software with an easy to use, with 
+a drag and drop user interface. The SoFab team had no issues upon introduction to the software, and were comfortable using the UI 
+to input information into their database. For the Label generation software, the program was written by the team in Python, and 
+the UI has easy to use dropdown tabs and checkboxes. These features were also tested by the SoFab team, as it was a priority of 
+the team to create a product that the employees were comfortable using.  
+
+There is an additional SSD that serves only as a backup to the primary, in case of a hardware failure.  Having the database hosted 
+exclusively on a local network will also reduce the risk of exposure to malware, as only those on-site will be able to 
+access the SSDs.  
 \section{Conclusions}
 
 \section{Recommendations for Future Work}
 
+\clearpage
 \begin{thebibliography}{99}
 \bibitem{sofabinks} SofaBinks. (n.d.). 
     About SofaBinks. Retrieved November 29, 2024, from \url{https://www.sofabinks.com/about}
