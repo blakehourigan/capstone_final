@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.2)  3 DEC 2024 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.2)  3 DEC 2024 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,43 +598,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [35] [36 <./pictures/late-python1.png (PNG copy)> <./pictures/late-python2.png 
 (PNG copy)>] [37
 
-] [38] [39] [40] [41]
-Underfull \hbox (badness 6675) in paragraph at lines 1046--1048
+] [38]
+<pictures/latex-label.png, id=654, 361.35pt x 255.95625pt>
+File: pictures/latex-label.png Graphic file (type png)
+<use pictures/latex-label.png>
+Package pdftex.def Info: pictures/latex-label.png  used on input line 995.
+(pdftex.def)             Requested size: 227.62204pt x 161.23375pt.
+<pictures/python-label.png, id=655, 221.32687pt x 159.59625pt>
+File: pictures/python-label.png Graphic file (type png)
+<use pictures/python-label.png>
+Package pdftex.def Info: pictures/python-label.png  used on input line 1000.
+(pdftex.def)             Requested size: 227.62204pt x 164.14487pt.
+ [39 <./pictures/latex-label.png> <./pictures/python-label.png>] [40] [41] [42]
+
+Underfull \hbox (badness 6675) in paragraph at lines 1094--1096
 \OT1/cmr/m/it/10 cur-rency Con-trol\OT1/cmr/m/n/10 , Post-greSQL 7.1 Doc-u-men-
 ta-tion, []$\OT1/cmtt/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 1064--1067
+Underfull \hbox (badness 3942) in paragraph at lines 1112--1115
 []\OT1/cmr/m/n/10 Budibase, \OT1/cmr/m/it/10 Docker Com-pose File for Host-ing\
 OT1/cmr/m/n/10 , GitHub Repos-i-tory,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1115
 []$\OT1/cmtt/m/n/10 https : / / raw . githubusercontent . com / Budibase / budi
 base / master /
  []
 
-[42
+[43
 
-] [43] (./final_team.aux)
+] [44] (./final_team.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `final_team.out' has not changed.
-(rerunfilecheck)             Checksum: EC3D60A7D37C613DC6C749BCE7A1CDED;8825.
+(rerunfilecheck)             Checksum: A025F86C9103A98BF036F7EB0CDCC48A;8825.
  ) 
 Here is how much of TeX's memory you used:
- 13608 strings out of 476076
- 215589 string characters out of 5793775
+ 13635 strings out of 476076
+ 216372 string characters out of 5793775
  2163187 words of memory out of 5000000
- 35322 multiletter control sequences out of 15000+600000
+ 35347 multiletter control sequences out of 15000+600000
  564647 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,8n,79p,417b,2036s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -652,10 +660,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on final_team.pdf (43 pages, 1666556 bytes).
+Output written on final_team.pdf (44 pages, 1725661 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 247 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 484 words of extra memory for PDF output out of 10000 (max. 10000000)
 

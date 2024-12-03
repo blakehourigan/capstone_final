@@ -970,9 +970,40 @@ while issues were found during the Python transition. Team members found this a 
 with a better understanding of how to prepare for these migrations.
 
 \section{Test/Evaluation Experimental Procedure and Analysis of Results} 
-EAC 6. Develop and conduct appropriate experimentation, analyze and interpret 
-data, and use engineering judgment to draw conclusions) 
+Testing was done as changes were made to the different systems to make sure that the systems still functioned with the new changes. 
+For example, as changes were made to the back-end of the database the team would then access the database from the front-end to make 
+sure that everything that was already set in place still functioned and that whatever was added functioned as it should. To elaborate 
+upon an example even further, at one point in the process a button was added to almost every tab on the front end so that the user 
+could input items into the database manually from the front-end. However, upon initial implementation, when testing the button on the 
+different pages to make sure it functioned as it should have, there were issues getting it to display on the pages properly. 
+Therefore, further testing was done and the code was looked back upon in detail to figure out what the error was and correct it so 
+that things would then function as they were meant to. While the example given is in relation to the database, the label generation 
+program was given the same treatment, where upon a new iteration of the program or any changes being made, things were gone through 
+and tested to make sure that it all still functioned as it was meant to. 
 
+In terms of experimentation, some experimentation was done with the label creation software. While overall, we did stick to python, 
+we experimented some with using other languages such as Latex to build out a PDF we could use as a label. Most of the 
+experimentation was attempting to replicate what we had already created using python but attempting to make it cleaner and a 
+little more streamlined, and while it looked nicer that some of our initial attempts using python, we found another way to approach 
+the program through python that functioned even better. An example of a label we generated using Latex is provided below contrasted 
+with a screenshot of what can look like using the python program (Figure \ref{fig:labels-maggie}). 
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=8cm]{"latex-label.png"}
+        \caption{Label generated with Latex.}
+    \end{subfigure}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=8cm]{"python-label.png"}
+        \caption{Label generated with Python.}
+    \end{subfigure}
+    \caption{}
+    \label{fig:labels-maggie}
+\end{figure}
+\FloatBarrier
 \section{Societal Impact of Project\slash Legal and Ethical Considerations} 
 Due to the nature of SoFab Ink’s work, it was necessary for the team to take the company’s privacy and legal trademarks into account, as 
 well as prioritize the safety and legal efficacy of the labels we were producing. The team focused on three primary standards during 
@@ -1036,6 +1067,23 @@ There is an additional SSD that serves only as a backup to the primary, in case 
 exclusively on a local network will also reduce the risk of exposure to malware, as only those on-site will be able to 
 access the SSDs.  
 \section{Conclusions}
+In conclusion, an inventory management system and label creation application were successfully developed by assessing and 
+implementing a solution to the problem presented through the application of computer science and engineering principals. 
+It was made clear to the group in the beginning that everything created would need to be very user-friendly, and this was taken 
+into heavy consideration when deciding what to utilize for creating this project, as well as making sure everything was open-source 
+as we were working with a small start-up, and did not want to pay to use different software when alternatives existed. These 
+specifications are why the team decided it was best to use BudiBase as a front-end for the database and PostgreSQL for the backend, 
+and why the label creation software was coded from scratch using python. Data safety and security were also taken into account 
+when making these decisions, as to follow the client’s needs.  
+
+A server was set up to host the database and a GitHub Repository was utilized for the label creation application, 
+as to allow collaboration and iteration through testing different methods of creating a customizable label program. 
+Precautions were taken to make sure intellectual property and data security were and will be kept safe through the use of these 
+programs, and through this projects ability to streamline Sofab’s inventory management process, these pieces of software will 
+hopefully allow them to focus more on their company’s goal of will contributing to the efficiency and cost-effectiveness of the 
+solar panel industry. Everything was completed to the satisfaction of the different engineering standards, and everyone in the team 
+learned things that can be taken forward with them as we all move on to different projects, with the potential to add things to this 
+project should they become necessary. 
 
 \section{Recommendations for Future Work}
 
