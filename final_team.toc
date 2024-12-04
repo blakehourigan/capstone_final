@@ -36,12 +36,14 @@
 \contentsline {section}{\numberline {6}Contribution of Project to Society\slash Expected Effects}{41}{section.6}%
 \contentsline {section}{\numberline {7}Engineering Standards, Constraints, and Security}{41}{section.7}%
 \contentsline {section}{\numberline {8}Conclusions}{42}{section.8}%
-\contentsline {section}{\numberline {9}Recommendations for Future Work}{42}{section.9}%
-\contentsline {section}{References}{43}{section*.23}%
-\contentsline {section}{Appendices}{44}{section*.24}%
-\contentsline {section}{\numberline {A}Customer Contact Information}{44}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}SoFab Company Information}{44}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}SoFab Representative Information}{44}{subsection.A.2}%
-\contentsline {section}{\numberline {B}Additional Drawings and Diagrams}{44}{appendix.B}%
-\contentsline {section}{\numberline {C}Source Code}{44}{appendix.C}%
-\contentsline {section}{\numberline {D}Software Installation Instructions}{44}{appendix.D}%
+\contentsline {section}{\numberline {9}Recommendations for Future Work}{43}{section.9}%
+\contentsline {section}{References}{44}{section*.23}%
+\contentsline {section}{Appendices}{45}{section*.24}%
+\contentsline {section}{\numberline {A}Customer Contact Information}{45}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}SoFab Company Information}{45}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}SoFab Representative Information}{45}{subsection.A.2}%
+\contentsline {section}{\numberline {B}Additional Drawings and Diagrams}{46}{appendix.B}%
+\contentsline {section}{\numberline {C}Source Code}{46}{appendix.C}%
+\contentsline {section}{\numberline {D}Software Installation Instructions}{46}{appendix.D}%
+\contentsline {section}{\numberline {E}User Manuals}{47}{appendix.E}%
+\contentsline {section}{\numberline {F}Quotes}{58}{appendix.F}%

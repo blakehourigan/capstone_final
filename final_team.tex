@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{float}
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -1086,6 +1087,29 @@ learned things that can be taken forward with them as we all move on to differen
 project should they become necessary. 
 
 \section{Recommendations for Future Work}
+While we did our best to make sure everything got implemented as needed, there are still a few areas where things could be improved 
+or added. A feature that was not implemented in this project that was suggested as a possibility towards the beginning is the 
+implementation of the ability to automatically pull up a Safety Data Sheet (SDS) relating to a chemical when it is put into the 
+database instead of having to manually attach a link or have it manually saved somewhere. This could potentially be done in a number 
+of ways, whether that be through creating a different table to hold lots of potential SDS’s or through implementing a feature where 
+one can reference the internet and pull a chemical’s SDS from there, as most base chemicals have SDS information publicly available.  
+
+Another feature that was discussed as a potential should we have had the time after implementing everything that was necessary, was 
+implementing a portion of the database that was dedicated to tracking experimental batches or an experiment done within a specific 
+batch process. These experimental items would also likely need their own separate analysis that could be done on them, comparing 
+them both within themselves as well as to the regular batches that they are working on. This could likely be implemented through 
+adding another table to the database and another tab to the front-end to display the related information, but the specific variables 
+and data points tracked will vary per experiment, so there is always the possibility for a different method of implementation. 
+
+Some other things that could be added would relate more to expanding on what has already been done. While we did our best to 
+implement a method of analytical analysis within Budibase so that the company we were working with could analyze and visualize some 
+of their data more easily, there were limitations to doing it in Budibase that could perhaps be avoided if one were to create 
+something outside Budibase that references the data in the database that is purely for analytical analysis and generating 
+graphs to visualize and compare selected data. While it is not a method we looked into, as we wanted to try to consolidate things 
+as best as we could, there are likely methods of such implementation out there. Another feature that could potentially be expanded 
+upon is the way in which the label generation program interacts and communicates with the database. While it has the ability to pull 
+information from and add information to the database with the current implementation, more could be done to have it function as an 
+alternate front-end or to simply further polish the communication capabilities it already has. 
 
 \clearpage
 \begin{thebibliography}{99}
@@ -1145,10 +1169,48 @@ Accessed on: December 1, 2024.
     \item Email: \url{peter.armstrong@sofabinks.com}
 \end{itemize}
 \section{Additional Drawings and Diagrams}
+\begin{figure}[H]
+        \centering 
+        \includegraphics[width=7cm]{v-early-labels.png} 
+        \caption{Early mockup drawings of eventual product labels.} 
+\end{figure} 
 \section{Source Code} 
 Custom source code is available at this GitHub link: \url{https://github.com/mmjackey/ChemLabelApp},
 where you may view or download any version of the code.
 \section{Software Installation Instructions} 
 Installation instructions will be provided in the README file at the GitHub link provided previously.
-
+\section{User Manuals}
+The current state of software documentation is included in the following pages.
+\includepdf[pages=-]{"Budibase Documentation.pdf"}
+\section{Quotes}
+For this project, two hardware purchases were required.
+\begin{itemize}
+    \item 2 x SP 1TB SSD, current price \$43.97 found at: \href{https://www.amazon.com/Silicon-Power-Performance-Internal-SP001TBSS3A55S25/dp/B07B4G19X3?crid=XIYMSXX6BZ4W&dib=eyJ2IjoiMSJ9.1wEOcQQMYkaby\_lTwZDkxGVUGVkoOVzJGJu-w83k2IjdJeJBWJed4h2AxYsw6nYjOEWzOtuORgppxRDDuMpkKJdh_aYgRQReKitlNKVbtv8uHLfaF9CD1By7u0hcN4aQsUfHxKPy6ckgwY882OpOhP8c_71EEMf5L7O0vXXkATbmVzl35pZyLB91jE36BQHMazCaxKHacwrBYvnzyh34e3nzEMVlnatrc7w-7L5Y-bY.pyo9opJepu6pSdA4lbLBXLj-3-3zIBoW2o16836p1DE&dib\_tag=se&keywords=1tb\%2Bssd&qid=1725398753&sprefix=1tb\%2Bssd\%2B\%2Caps\%2C109&sr=8-3&th=1}{this link.}\\ (If broken: \url{https://www.amazon.com/Silicon-Power-Performance-Internal-SP001TBSS3A55S25/dp/B07B4G19X3?crid=XIYMSXX6BZ4W&dib=eyJ2IjoiMSJ9.1wEOcQQMYkaby\_lTwZDkxGVUGVkoOVzJGJu-w83k2IjdJeJBWJed4h2AxYsw6nYjOEWzOtuORgppxRDDuMpkKJdh_aYgRQReKitlNKVbtv8uHLfaF9CD1By7u0hcN4aQsUfHxKPy6ckgwY882OpOhP8c_71EEMf5L7O0vXXkATbmVzl35pZyLB91jE36BQHMazCaxKHacwrBYvnzyh34e3nzEMVlnatrc7w-7L5Y-bY.pyo9opJepu6pSdA4lbLBXLj-3-3zIBoW2o16836p1DE&dib\_tag=se&keywords=1tb\%2Bssd&qid=1725398753&sprefix=1tb\%2Bssd\%2B\%2Caps\%2C109&sr=8-3&th=1})
+    \item 2 x Tera Pro 2024 Wireless 1D 2D QR Barcode Scanner, current price of \$40.97 found at \href{https://www.amazon.com/Tera-Compatible-Bluetooth-Connection-Vibration/dp/B07T5KG5JC?crid=34ME3BSWNJ05K&dib=eyJ2IjoiMSJ9.oeTdu9brML5dD0qamcBEI-q79_TT2X8UK-5CCF1d4jN50DweI6CBkwvmTr5Bzibm_wPy1t3anEE5ykFjBEcrzlx6vV0rK7K10reXjNn7E0d3kp0UjIq5_yxRX4ssYS0zQXfsj6fVrzWN3dWsBcY47LB3p7lA68e-JkdTuOuJdwvyTG5WKg8v4M1LQFLmenhsS91AIWS8OITRZV-BuwJFDBlr-zHJ_9PN4u_H-X3GB5g.WvxgJxLvQtxKnB-cNV1anIzoe1W1FZcFKIDrzuFYwU0&dib_tag=se&keywords=barcode\%2Bscanner&qid=1725398951&sprefix=barcode\%2Bscanner\%2Caps\%2C95&sr=8-10&th=1}{this link.} \\ (If broken \url{https://www.amazon.com/Tera-Compatible-Bluetooth-Connection-Vibration/dp/B07T5KG5JC?crid=34ME3BSWNJ05K&dib=eyJ2IjoiMSJ9.oeTdu9brML5dD0qamcBEI-q79_TT2X8UK-5CCF1d4jN50DweI6CBkwvmTr5Bzibm_wPy1t3anEE5ykFjBEcrzlx6vV0rK7K10reXjNn7E0d3kp0UjIq5_yxRX4ssYS0zQXfsj6fVrzWN3dWsBcY47LB3p7lA68e-JkdTuOuJdwvyTG5WKg8v4M1LQFLmenhsS91AIWS8OITRZV-BuwJFDBlr-zHJ_9PN4u_H-X3GB5g.WvxgJxLvQtxKnB-cNV1anIzoe1W1FZcFKIDrzuFYwU0&dib_tag=se&keywords=barcode\%2Bscanner&qid=1725398951&sprefix=barcode\%2Bscanner\%2Caps\%2C95&sr=8-10&th=1})
+\end{itemize}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
